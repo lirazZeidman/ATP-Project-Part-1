@@ -5,5 +5,6 @@ public class EmptyMazeGenerator extends  AMazeGenerator {
     public Maze generate(int row, int column) {
         Maze maze= new EmptyMaze(row,column);
         return maze;
+
     }
 }

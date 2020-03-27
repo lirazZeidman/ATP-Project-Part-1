@@ -8,5 +8,6 @@ public class EmptyMaze extends Maze{
         }
         StartPosition=new Position(0,0);
         GoalPosition= new Position(rowSize-1,columnSize-1);
+
     }
 }

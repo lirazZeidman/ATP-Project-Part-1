@@ -38,6 +38,7 @@ public abstract class Maze {
             Out+="]\n[";
         }
         System.out.println(Out+"]");
+
     }
 }
 

@@ -5,6 +5,7 @@ public abstract class AMazeGenerator implements  IMazeGenerator{
         generate(row,column);
         long EndTime=System.currentTimeMillis();
         return EndTime-StartTime;
+
     }
 
 }
