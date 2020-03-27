@@ -65,9 +65,17 @@ public class Maze {
     }
 
     public void Print(){
-        for (int[] row : MazeTable)
-        {
-            System.out.println(Arrays.toString(row));
+        String out="";
+        for (int i = 0; i < RowSize; i++) {
+            for (int j = 0; j < ColumnSize; j++) {
+                if(StartPosition.isEqual(i,j))
+                    out+="S";
+                else if(GoalPosition.isEqual(i,j))
+                    out+="E";
+                else
+                    out+=MazeTable[i][j];
+            }
+            out+="\n";
         }
 
     }

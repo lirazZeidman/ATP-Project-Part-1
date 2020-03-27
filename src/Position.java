@@ -6,7 +6,10 @@ public class Position {
         RowIndex = rowIndex;
         ColumnIndex = columnIndex;
     }
+    public boolean isEqual(int row, int col){
+        return RowIndex==row && ColumnIndex==col;
 
+    }
     public void setPosition(int rowIndex,int columnIndex){
         this.setRowIndex(rowIndex);
         this.setColumnIndex(columnIndex);
