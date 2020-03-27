@@ -5,7 +5,6 @@ public class Position {
     public Position(int rowIndex, int columnIndex) {
         RowIndex = rowIndex;
         ColumnIndex = columnIndex;
-
     }
 
     public void setPosition(int rowIndex,int columnIndex){
