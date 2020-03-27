@@ -20,6 +20,7 @@ public class Maze {
         MazeTable = new String[RowSize][ColumnSize];
         StartPosition=new Position(0,0);
         GoalPosition= new Position(rowSize,columnSize);
+
     }
 
     public void setMazeTable(String[][] mazeTable) {
