@@ -19,6 +19,7 @@ public class Position {
     @Override
     public String toString() {
         String Lirez_HOPART;
+
         return "{"+RowIndex+","+ColumnIndex+"}";
     }
 
