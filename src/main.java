@@ -9,6 +9,8 @@ class main {
             }
         }
 
-        }
+        int[][] v = new int[0][0];
+
+
     }
 }

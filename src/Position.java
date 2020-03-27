@@ -8,6 +8,19 @@ public class Position {
 
     }
 
+    public void setPosition(int rowIndex,int columnIndex){
+        this.setRowIndex(rowIndex);
+        this.setColumnIndex(columnIndex);
+    }
+
+    public void setRowIndex(int rowIndex) {
+        RowIndex = rowIndex;
+    }
+
+    public void setColumnIndex(int columnIndex) {
+        ColumnIndex = columnIndex;
+    }
+
     public int getRowIndex() {
         return RowIndex;
     }
