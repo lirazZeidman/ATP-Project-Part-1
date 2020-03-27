@@ -18,8 +18,7 @@ public class Position {
 
     @Override
     public String toString() {
-        String Lirez_HOPART;
-
+        String dani_idiot;
         return "{"+RowIndex+","+ColumnIndex+"}";
     }
 
