@@ -1,15 +1,38 @@
-public abstract class Maze {
+import java.util.Arrays;
+
+public class Maze {
     protected int ColumnSize;
     protected int RowSize;
-    protected int[][] MazeTable;
+    protected String[][] MazeTable;
     //TODO: change to string and change the print
     protected Position StartPosition;
     protected Position GoalPosition;
+    private int Done;
+
+
+
+    public void setMazeTable(String[][] mazeTable) {
+        MazeTable = mazeTable;
+    }
+
+    public void setStartPosition(Position startPosition) {
+        StartPosition = startPosition;
+    }
+
+    public void setGoalPosition(Position goalPosition) {
+        GoalPosition = goalPosition;
+    }
+
+    public void setDone() {
+        if (Done == 0) {
+            Done = 1;
+        }
+    }
 
     public Maze(int rowSize, int columnSize) {
         ColumnSize = columnSize;
         RowSize = rowSize;
-        MazeTable = new int[RowSize][ColumnSize];
+        MazeTable = new String[RowSize][ColumnSize];
         StartPosition=new Position(0,0);
         GoalPosition= new Position(rowSize,columnSize);
     }
@@ -22,22 +45,15 @@ public abstract class Maze {
         return GoalPosition;
     }
 
+    public String[][] getMazeTable() {
+        return MazeTable;
+    }
+
     public void Print(){
-        String Out="[";
-        for (int i = 0; i <RowSize ; i++) {
-            for (int j = 0; j <ColumnSize ; j++) {
-                if(StartPosition.getRowIndex()==i && StartPosition.getColumnIndex()==j){
-                    Out+=" S ";
-                }
-                else if(GoalPosition.getRowIndex()==i && GoalPosition.getColumnIndex()==j){
-                    Out+=" E ";
-                }
-                else
-                    Out+=MazeTable[i][j];
-            }
-            Out+="]\n[";
+        for (String[] row : MazeTable)
+        {
+            System.out.println(Arrays.toString(row));
         }
-        System.out.println(Out+"]");
 
     }
 }
