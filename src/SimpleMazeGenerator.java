@@ -5,7 +5,9 @@ public class SimpleMazeGenerator extends  AMazeGenerator {
     public Maze generate(int row, int column) {
         EmptyMazeGenerator emptymaker= new EmptyMazeGenerator();
         Maze maze = emptymaker.generate(row,column);
-        if
+        if (row==1 || column==1)
+            return maze;
+
         // create instance of Random class
         Random rand = new Random();
 

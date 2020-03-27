@@ -12,6 +12,7 @@ class main {
 //        int[][] v = new int[0][0];
         SimpleMazeGenerator SMG= new SimpleMazeGenerator();
         Maze test1= SMG.generate(2,2);
+        System.out.println((SMG.measureAlgorithmTimeMillis(1000,1000)));
         test1.Print();
 
 
