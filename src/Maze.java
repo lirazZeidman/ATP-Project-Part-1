@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Maze {
     protected int ColumnSize;
     protected int RowSize;
-    protected String[][] MazeTable;
+    protected int[][] MazeTable;
     protected Position StartPosition;
     protected Position GoalPosition;
 
@@ -16,7 +16,7 @@ public class Maze {
         }
         ColumnSize = columnSize;
         RowSize = rowSize;
-        MazeTable = new String[RowSize][ColumnSize];
+        MazeTable = new int[RowSize][ColumnSize];
         StartPosition=new Position(0,0);
         GoalPosition= new Position(rowSize,columnSize);
     }
@@ -60,12 +60,12 @@ public class Maze {
         return GoalPosition;
     }
 
-    public String[][] getMazeTable() {
+    public int[][] getMazeTable() {
         return MazeTable;
     }
 
     public void Print(){
-        for (String[] row : MazeTable)
+        for (int[] row : MazeTable)
         {
             System.out.println(Arrays.toString(row));
         }
