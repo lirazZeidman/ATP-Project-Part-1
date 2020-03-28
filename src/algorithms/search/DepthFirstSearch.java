@@ -1,9 +1,6 @@
 package algorithms.search;
 
-import algorithms.ISearchable;
-import algorithms.Solution;
-
-public class DepthFirstSearch extends algorithms.search.ASearchingAlgorithm {
+public class DepthFirstSearch extends ASearchingAlgorithm {
     @Override
     public Solution solve(ISearchable maze) {
         return null;

@@ -1,5 +1,6 @@
+package algorithms.mazeGenerators;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Maze {
     protected int ColumnSize;
@@ -80,7 +81,7 @@ public class Maze {
         return 0<=x && x<=RowSize && 0<=y && y<=ColumnSize;
     }
 
-    public void Print(){
+    public void print(){
         String out="";
         for (int i = 0; i < RowSize; i++) {
             for (int j = 0; j < ColumnSize; j++) {

@@ -1,7 +1,7 @@
 package algorithms.search;
 
 public abstract class ASearchingAlgorithm implements ISearchingAlgorithm {
-    protected int NumberOfNodesEvaluated;
+    protected int NumberOfNodesEvaluated=0;
     //TODO the seqence of nodes in the way yo solution
 
     @Override

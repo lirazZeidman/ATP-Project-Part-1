@@ -1,9 +1,7 @@
 package algorithms.search;
 
-import algorithms.Solution;
-
 public interface ISearchingAlgorithm {
-    public Solution solve(algorithms.search.ISearchable maze);
+    public Solution solve(ISearchable domain);
     public String getName();
     public int getNumberOfNodesEvaluated();
 }

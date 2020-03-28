@@ -1,9 +1,6 @@
 package algorithms.search;
 
-import algorithms.ISearchable;
-import algorithms.Solution;
-
-public class BreadthFirstSearch extends algorithms.search.ASearchingAlgorithm {
+public class BreadthFirstSearch extends ASearchingAlgorithm {
 
 
     @Override
@@ -15,4 +12,6 @@ public class BreadthFirstSearch extends algorithms.search.ASearchingAlgorithm {
     public String getName() {
         return null;
     }
+
+
 }

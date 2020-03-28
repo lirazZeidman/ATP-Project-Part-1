@@ -1,4 +1,6 @@
-public class Position {
+package algorithms.mazeGenerators;
+
+public class Position  {
     private int RowIndex;
     private int ColumnIndex;
 

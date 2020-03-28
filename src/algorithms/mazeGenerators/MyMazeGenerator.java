@@ -1,3 +1,5 @@
+package algorithms.mazeGenerators;
+
 import java.util.*;
 
 public class MyMazeGenerator extends AMazeGenerator {
@@ -11,10 +13,13 @@ public class MyMazeGenerator extends AMazeGenerator {
         for (int i = 0; i < row; i++)
             for (int j = 0; j < column; j++) maze.MazeTable[i][j] = 1;
 
-        //maze.MazeTable[0][0]=0;
+
+        Random rand = new Random();
+        int rand_int1 = rand.nextInt(column - 2) + 1; // -1 beacuse of the entrance +1 so it cant be 0
+        maze.StartPosition=new Position(0,rand_int1);
+
 
         stack.push(maze.getStartPosition());
-        stack.push(maze.getGoalPosition());
         Position nextPos = null;
         while(!stack.empty()){
             nextPos=stack.pop();
@@ -24,6 +29,7 @@ public class MyMazeGenerator extends AMazeGenerator {
             ArrayList<Position> neighbors= maze.getNextMoveNeighbors(nextPos);
             randomlyAddsNextPositionsToStack(neighbors);
         }
+        lastE();
         return maze;
     }
 
@@ -39,6 +45,18 @@ public class MyMazeGenerator extends AMazeGenerator {
 
     }
 
+    public void lastE(){
+        int max= maze.getRowSize()*maze.getColumnSize()-1;
+        while (max>1)  {
+            int row= max/maze.getColumnSize();
+            int column= max/maze.getRowSize();
+            if (maze.MazeTable[row][column]==0){
+                maze.GoalPosition= new Position(row+1,column);
+                break;
+            }
+            max--;
+        }
+    }
 
 
 }

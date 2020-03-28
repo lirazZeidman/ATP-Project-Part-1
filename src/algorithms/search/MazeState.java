@@ -1,4 +1,9 @@
 package algorithms.search;
 
-public class MazeState extends algorithms.search.AState {
+import algorithms.mazeGenerators.Position;
+
+public class MazeState extends AState  {
+    private Position pos;
+
+
 }
