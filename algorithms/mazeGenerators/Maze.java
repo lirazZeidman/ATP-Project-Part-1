@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package mazeGenerators;
 
 public class Maze {
     protected int ColumnSize;

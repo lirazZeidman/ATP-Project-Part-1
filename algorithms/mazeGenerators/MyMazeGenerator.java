@@ -1,6 +1,7 @@
+package mazeGenerators;
+
 import java.util.HashSet;
 import java.util.Set;
-import java.util.Random;
 
 public class MyMazeGenerator extends AMazeGenerator {
     @Override

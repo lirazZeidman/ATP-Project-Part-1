@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package mazeGenerators;
 
 class main {
     public static void main(String[] args) {
