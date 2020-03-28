@@ -1,4 +1,4 @@
-package mazeGenerators;
+package algorithms.mazeGenerators;
 
 public class Maze {
     protected int ColumnSize;
@@ -64,7 +64,7 @@ public class Maze {
         return MazeTable;
     }
 
-    public void Print(){
+    public void print(){
         String out="";
         for (int i = 0; i < RowSize; i++) {
             for (int j = 0; j < ColumnSize; j++) {

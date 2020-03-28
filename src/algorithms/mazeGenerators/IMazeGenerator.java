@@ -1,4 +1,4 @@
-package mazeGenerators;
+package algorithms.mazeGenerators;
 
 public interface IMazeGenerator {
     public Maze generate(int row, int column);

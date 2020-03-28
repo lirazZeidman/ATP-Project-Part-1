@@ -1,4 +1,4 @@
-package mazeGenerators;
+package algorithms.mazeGenerators;
 
 import java.util.HashSet;
 import java.util.Set;
