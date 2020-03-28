@@ -77,6 +77,8 @@ public class Maze {
             }
             out+="\n";
         }
+        System.out.println(out);
+
 
     }
 }
