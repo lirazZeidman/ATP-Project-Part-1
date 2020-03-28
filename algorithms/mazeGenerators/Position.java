@@ -1,5 +1,3 @@
-package mazeGenerators;
-
 public class Position {
     private int RowIndex;
     private int ColumnIndex;
