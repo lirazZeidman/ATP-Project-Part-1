@@ -9,6 +9,11 @@ public class Position {
     public boolean isEqual(int row, int col){
         return RowIndex==row && ColumnIndex==col;
     }
+
+    public boolean isEqual(Position p){
+        return this.ColumnIndex==p.ColumnIndex && this.RowIndex==p.RowIndex;
+    }
+
     public void setPosition(int rowIndex,int columnIndex){
         this.setRowIndex(rowIndex);
         this.setColumnIndex(columnIndex);
@@ -30,7 +35,12 @@ public class Position {
         return ColumnIndex;
     }
 
+
+    protected boolean posNotDiagonallyTo(Position p){
+        return RowIndex == p.getRowIndex() || ColumnIndex==p.getColumnIndex();
+    }
     @Override
+
     public String toString() {
         return "{"+RowIndex+","+ColumnIndex+"}";
     }
