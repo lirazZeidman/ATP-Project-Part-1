@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6d3122e4-a9af-4ca7-a112-fdf32e54792e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +29,6 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZiPH6FTKcj4Op0MCWNloM6pWXr" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -73,7 +71,6 @@
       <workItem from="1585320929645" duration="1037000" />
       <workItem from="1585322841436" duration="131000" />
       <workItem from="1585394313098" duration="466000" />
-      <workItem from="1585402789608" duration="255000" />
     </task>
     <task id="LOCAL-00001" summary="|DAnis update">
       <created>1585321119571</created>
@@ -159,21 +156,7 @@
       <option name="project" value="LOCAL" />
       <updated>1585394564798</updated>
     </task>
-    <task id="LOCAL-00013" summary="Mase class and Position class update">
-      <created>1585402933662</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1585402933663</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Mase class and Position class update">
-      <created>1585403014474</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1585403014474</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +181,7 @@
                   <entry key="structure">
                     <value>
                       <list>
-                        <option value="dir:C:/Users/liraz zeidma/IdeaProjects/ATP-Project-Part-1/src" />
+                        <option value="dir:C:/Users/danii/Desktop/Dani/Semster 3/ATP-Project-Part-1/src" />
                       </list>
                     </value>
                   </entry>
@@ -216,14 +199,8 @@
         </entry>
       </map>
     </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="|DAnis update" />
     <MESSAGE value="|DAnis update sdfssf" />
     <MESSAGE value="Mase class and Position class update" />
@@ -250,69 +227,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="566" y="297" width="403" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585321912783" />
-    <state x="345" y="6" key="CommitChangelistDialog2" timestamp="1585403013514">
+    <state x="345" y="6" key="CommitChangelistDialog2" timestamp="1585394569909">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="345" y="6" key="CommitChangelistDialog2/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585327496738" />
-    <state x="345" y="6" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585403013514" />
+    <state x="345" y="6" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585394569909" />
     <state x="345" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585323036373" />
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1585402968324">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1585321247883">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585321247883" />
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585402968324" />
-    <state width="746" height="138" key="GridCell.Tab.0.bottom" timestamp="1585402440932">
+    <state width="746" height="210" key="GridCell.Tab.0.bottom" timestamp="1585394783261">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585321184721" />
-    <state width="746" height="138" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585402440932" />
-    <state width="746" height="138" key="GridCell.Tab.0.center" timestamp="1585402440932">
+    <state width="746" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585394783261" />
+    <state width="746" height="210" key="GridCell.Tab.0.center" timestamp="1585394783260">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585321184720" />
-    <state width="746" height="138" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585402440932" />
-    <state width="746" height="138" key="GridCell.Tab.0.left" timestamp="1585402440932">
+    <state width="746" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585394783260" />
+    <state width="746" height="210" key="GridCell.Tab.0.left" timestamp="1585394783259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585321184720" />
-    <state width="746" height="138" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585402440932" />
-    <state width="746" height="138" key="GridCell.Tab.0.right" timestamp="1585402440932">
+    <state width="746" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585394783259" />
+    <state width="746" height="210" key="GridCell.Tab.0.right" timestamp="1585394783261">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585321184721" />
-    <state width="746" height="138" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585402440932" />
-    <state x="482" y="122" key="RollbackChangesDialog" timestamp="1585402429809">
+    <state width="746" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585394783261" />
+    <state x="482" y="122" key="RollbackChangesDialog" timestamp="1585321288565">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="482" y="122" key="RollbackChangesDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585321288565" />
-    <state x="482" y="122" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585402429809" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1585321393144">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585321393144" />
-    <state x="515" y="117" key="VCS.ChangeListViewerDialog" timestamp="1585403042449">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="515" y="117" key="VCS.ChangeListViewerDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585403042449" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1585394581063">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585321941295" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585394581063" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585323040845" />
-    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585403027512">
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585323096060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585322024583" />
-    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585403027512" />
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1585323096060" />
-    <state x="461" y="204" key="git4idea.merge.GitPullDialog" timestamp="1585402534579">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="461" y="204" key="git4idea.merge.GitPullDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585402534579" />
-    <state x="428" y="224" key="git4idea.ui.GitUnstashDialog" timestamp="1585402883979">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="428" y="224" key="git4idea.ui.GitUnstashDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585402883979" />
   </component>
 </project>
