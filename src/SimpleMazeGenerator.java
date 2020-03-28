@@ -14,6 +14,7 @@ public class SimpleMazeGenerator extends  AMazeGenerator {
         // Generate random integers in range 0 to 999
         int rand_int1 = rand.nextInt(column-1)+1; // -1 beacuse of the entrance +1 so it cant be 0
         maze.MazeTable[0][rand_int1]=1;
+
         return maze;
     }
 }
