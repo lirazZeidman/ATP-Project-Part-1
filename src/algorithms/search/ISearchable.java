@@ -9,10 +9,4 @@ public interface ISearchable {
     public AState getGoal();
     public boolean Compare(AState x ,AState y );
 
-
-
-//    public boolean
-
-
-
 }

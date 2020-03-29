@@ -1,14 +1,13 @@
 package algorithms.mazeGenerators;
 
 import java.util.ArrayList;
-
+//TODO check what MAze return
 public class Maze {
     protected int ColumnSize;
     protected int RowSize;
     protected int[][] MazeTable;
     protected Position StartPosition;
     protected Position GoalPosition;
-    private String Table;
 
 
 
