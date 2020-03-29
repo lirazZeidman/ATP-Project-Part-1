@@ -24,6 +24,8 @@ public class Maze {
     }
 
     protected ArrayList<Position> getNeighbors(Position pos){
+        if(pos==null) //if well rerturn null -> will e alot to check later.
+            return new ArrayList<>() ;
         int row=pos.getRowIndex(),col=pos.getColumnIndex();
         Position tmpPos = null;
         ArrayList<Position> neighbors = new ArrayList<>();
@@ -36,6 +38,7 @@ public class Maze {
     }
 
     protected ArrayList<Position> getNextMoveNeighbors(Position pos) {
+        //dealing if pos=null i getNeighbors func.
         ArrayList<Position> neighbors = getNeighbors(pos);
         ArrayList<Position> NextMoveNeighbors = new ArrayList<>();
         for (Position tmpPos : neighbors)
@@ -47,11 +50,15 @@ public class Maze {
 
 
     protected boolean PosOnMazeTable(Position nextPos){
+        if (nextPos==null)
+                return false;
         int x=nextPos.getRowIndex(),y=nextPos.getColumnIndex();
         return 0<=x && x<RowSize && 0<=y && y<ColumnSize;
     }
 
     protected int getPosValue(Position Pos) {
+        if (Pos==null)
+            return -1;//wont get here, checking first always if on board.
         return MazeTable[Pos.getRowIndex()][Pos.getColumnIndex()];
     }
 
@@ -75,10 +82,6 @@ public class Maze {
         return MazeTable;
     }
 
-    protected boolean onMazeTable(Position nextPos){
-        int x=nextPos.getRowIndex(),y=nextPos.getColumnIndex();
-        return 0<=x && x<=RowSize && 0<=y && y<=ColumnSize;
-    }
 
     public void print(){
         String out="";

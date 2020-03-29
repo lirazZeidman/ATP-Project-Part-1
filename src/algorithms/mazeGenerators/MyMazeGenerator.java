@@ -9,7 +9,12 @@ public class MyMazeGenerator extends AMazeGenerator {
     private Maze maze;
 
     public Maze generate(int row, int column) {
+        if(row<0||column<0)
+            return null;
         maze=new Maze(row,column);
+        if(maze==null)
+            return null;
+        //TODO Throw Exceptions
         for (int i = 0; i < row; i++)
             for (int j = 0; j < column; j++) maze.MazeTable[i][j] = 1;
 
@@ -34,12 +39,14 @@ public class MyMazeGenerator extends AMazeGenerator {
     }
 
     private void randomlyAddsNextPositionsToStack(ArrayList<Position> neighbors) {
+        //if getting an empty arraylist-> wont do a thing here :)
         while (!neighbors.isEmpty()) {
-
             stack.push(neighbors.remove(rand.nextInt(neighbors.size() )));
         }
     }
     private boolean isValidNextMove(Position nextPos) {
+        if(nextPos==null)
+            return false;
         ArrayList<Position> NextMoveNeighbors=maze.getNextMoveNeighbors(nextPos);
         return NextMoveNeighbors.size()>2 && maze.getPosValue(nextPos)==1;
 
