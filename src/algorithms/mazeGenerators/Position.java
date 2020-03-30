@@ -38,15 +38,20 @@ public class Position  {
     }
 
 
-    protected boolean posNotDiagonallyTo(Position p){
-        if (p==null) return true;// todo decide if returnind true or false.
+    public boolean posNotDiagonallyTo(Position p){
+        /**
+         * False if they diagonal
+         */
+        if (p==null) return true;
         //TODO Throw Exceptions
         return RowIndex == p.getRowIndex() || ColumnIndex==p.getColumnIndex();
     }
-    @Override
 
     public String toString() {
         return "{"+RowIndex+","+ColumnIndex+"}";
+
+
+
     }
 
 }
