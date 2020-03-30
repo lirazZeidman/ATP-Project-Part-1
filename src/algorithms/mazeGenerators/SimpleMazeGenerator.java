@@ -22,6 +22,7 @@ public class SimpleMazeGenerator extends  AMazeGenerator {
             maze.MazeTable[0][rand_wall] = 1;
             maze.StartPosition= new Position(0,rand_start);
         }
+
         return maze;
 
     }
