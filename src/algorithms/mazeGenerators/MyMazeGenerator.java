@@ -9,16 +9,18 @@ public class MyMazeGenerator extends AMazeGenerator {
     private Maze maze;
 
     public Maze generate(int row, int column) {
+        if (row<= 2 || column<=2) {
+              SimpleMazeGenerator smg= new SimpleMazeGenerator();
+              return smg.generate(row,column);
+        }
         maze=new Maze(row,column);
         for (int i = 0; i < row; i++)
             for (int j = 0; j < column; j++) maze.MazeTable[i][j] = 1;
 
 
         Random rand = new Random();
-        int rand_int1 = rand.nextInt(column - 2) + 1; // -1 beacuse of the entrance +1 so it cant be 0
+        int rand_int1 = rand.nextInt(column - 2) + 1; // -2 beacuse of the entrance  +1 so it cant be 0
         maze.StartPosition=new Position(0,rand_int1);
-
-
         stack.push(maze.getStartPosition());
         Position nextPos = null;
         while(!stack.empty()){
