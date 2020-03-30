@@ -13,7 +13,6 @@ public abstract class AState {
         this.prev = prev;
     }
 
-
     public Object getCurNode() {
         return CurNode;
     }
@@ -28,4 +27,9 @@ public abstract class AState {
 
     abstract public String toString();
 
+    public boolean equals(AState b){
+        return this.CurNode.equals(b.CurNode);
+    }
 }
+
+

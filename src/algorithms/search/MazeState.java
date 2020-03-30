@@ -13,4 +13,8 @@ public class MazeState extends AState   {
     public String toString() {
         return this.CurNode.toString();
     }
+
+    public boolean equals(AState b){
+        return this.CurNode.equals(b.CurNode);
+    }
 }

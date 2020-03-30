@@ -1,5 +1,7 @@
 package algorithms.mazeGenerators;
 
+import org.jetbrains.annotations.NotNull;
+
 public class Position  {
     private int RowIndex;
     private int ColumnIndex;
@@ -8,11 +10,11 @@ public class Position  {
         RowIndex = rowIndex;
         ColumnIndex = columnIndex;
     }
-    public boolean isEqual(int row, int col){
+    public boolean equals(int row, int col){
         return RowIndex==row && ColumnIndex==col;
     }
 
-    public boolean isEqual(Position p){
+    public boolean equals(@NotNull Position p){
         return this.ColumnIndex==p.ColumnIndex && this.RowIndex==p.RowIndex;
     }
 
@@ -49,9 +51,6 @@ public class Position  {
 
     public String toString() {
         return "{"+RowIndex+","+ColumnIndex+"}";
-
-
-
     }
 
 }
