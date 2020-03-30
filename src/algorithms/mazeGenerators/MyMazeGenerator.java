@@ -9,6 +9,10 @@ public class MyMazeGenerator extends AMazeGenerator {
     private Maze maze;
 
     public Maze generate(int row, int column) {
+        if(row<=2 ||column<=2){
+            AMazeGenerator smg=new SimpleMazeGenerator();
+            return smg.generate(row,column);
+        }
         maze=new Maze(row,column);
         for (int i = 0; i < row; i++)
             for (int j = 0; j < column; j++) maze.MazeTable[i][j] = 1;

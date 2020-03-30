@@ -21,9 +21,9 @@ import java.util.ArrayList;
             ArrayList<Position> neighbors = maze.getMoveForSearcher((Position) StatePos.getCurNode()); // not sure this is the proper way to do it.
             for (Position tmpPos : neighbors) {
                 if (tmpPos.posNotDiagonallyTo((Position) StatePos.CurNode))
-                    arrState.add(new MazeState(tmpPos, StatePos, 10));
+                    arrState.add(new MazeState(tmpPos, StatePos, StatePos.getCost()+10));
                 else
-                    arrState.add(new MazeState(tmpPos, StatePos, 15));
+                    arrState.add(new MazeState(tmpPos, StatePos, StatePos.getCost()+15));
             }
             return arrState;
 
@@ -31,7 +31,7 @@ import java.util.ArrayList;
 
         @Override
         public AState getStart() {
-            return null;
+            return new MazeState(maze.getStartPosition(), null, 0);
         }
 
 

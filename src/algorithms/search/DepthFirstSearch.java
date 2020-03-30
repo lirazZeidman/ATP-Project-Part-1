@@ -1,7 +1,5 @@
 package algorithms.search;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.ArrayList;
 import java.util.Stack;
 
@@ -10,17 +8,27 @@ public class DepthFirstSearch extends ASearchingAlgorithm {
 
     @Override
     public Solution solve(ISearchable maze) {
-        ArrayList<AState> VistiedState= new ArrayList<AState>();
-        Stack <AState> stack= new Stack<AState>();
+        ArrayList<AState> VistiedState = new ArrayList<AState>();
+        Stack<AState> stack = new Stack<AState>();
+        AState min = null;
+        int tmp_min = Integer.MAX_VALUE;
         stack.push(maze.getStart());
-        while(!stack.empty()){
-            AState node= stack.pop();
-            if (!ListContains(VistiedState,node)){
+        while (!stack.empty()) {
+            AState node = stack.pop();
+            if (maze.AreWeThereYet(node)) //checks if reach the goal and if minmum
+                if (node.Cost < tmp_min) {
+                    tmp_min = node.Cost;
+                    min = node;
+                }
+            if (!ListContains(VistiedState, node)) { //checks if vistied
                 VistiedState.add(node);
-
+                ArrayList<AState> neighbors = maze.getAllPossibleStates(node); //checks all the
+                for (AState neighbor : neighbors)
+                    if (!ListContains(VistiedState, neighbor)) {
+                        stack.push(neighbor);
+                    }
             }
         }
-
 
 
         return null;
@@ -32,7 +40,7 @@ public class DepthFirstSearch extends ASearchingAlgorithm {
     }
 
 
-    public boolean ListContains(@NotNull ArrayList<AState> lst, AState tocomp ) {
+    public boolean ListContains(ArrayList<AState> lst, AState tocomp) {
         for (AState state : lst) {
             if (state.equals(tocomp))
                 return true;
