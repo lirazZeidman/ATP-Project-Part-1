@@ -5,6 +5,10 @@ import java.util.Random;
 public class SimpleMazeGenerator extends  AMazeGenerator {
     @Override
     public Maze generate(int row, int column) {
+
+        if( row<0 || column<0) //int can not be null
+            //TODO Throw Exceptions
+            return null;
         EmptyMazeGenerator emptymaker= new EmptyMazeGenerator();
         Maze maze = emptymaker.generate(row,column);
         if (row != 1 && column != 1) {// create instance of Random class

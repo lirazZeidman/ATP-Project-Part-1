@@ -4,7 +4,7 @@ public class Position  {
     private int RowIndex;
     private int ColumnIndex;
 
-    public Position(int rowIndex, int columnIndex) {
+    public Position(int rowIndex, int columnIndex) { //position can be anything, were checking if the pos on the board in diffrent function
         RowIndex = rowIndex;
         ColumnIndex = columnIndex;
     }
@@ -39,6 +39,8 @@ public class Position  {
 
 
     protected boolean posNotDiagonallyTo(Position p){
+        if (p==null) return true;// todo decide if returnind true or false.
+        //TODO Throw Exceptions
         return RowIndex == p.getRowIndex() || ColumnIndex==p.getColumnIndex();
     }
     @Override

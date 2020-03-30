@@ -1,15 +1,8 @@
 package algorithms.search;
 
-import algorithms.mazeGenerators.Maze;
-
 import java.util.List;
 
 public class searchableMaze implements ISearchable {
-    private Maze maze;
-
-    public searchableMaze(Maze maze) {
-        this.maze = maze;
-    }
 
     @Override
     public List<AState> getAllPossibleStates(AState pos) {
