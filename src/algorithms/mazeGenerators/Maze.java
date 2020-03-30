@@ -43,6 +43,8 @@ public class Maze {
                     if(getPosValue(tmpPos1)==0 && searcherNeighbors.contains(tmpPos1))
                         searcherNeighbors.add(tmpPos);
                 }
+
+
             }
         }
         return searcherNeighbors;
