@@ -61,7 +61,7 @@ public class Maze {
         ArrayList<Position> neighbors = new ArrayList<>();
         for (int r=row-1;r<row+2;r++) for(int c=col-1;c<col+2;c++) { //checks all 9 possible positions from the left top point
             tmpPos = new Position(r, c);
-            if (PosOnMazeTable(tmpPos) && (!pos.isEqual(tmpPos)) )
+            if (PosOnMazeTable(tmpPos) && (!pos.equals(tmpPos)) )
                 neighbors.add(tmpPos);
         }
         return neighbors;
@@ -116,9 +116,9 @@ public class Maze {
         String out="";
         for (int i = 0; i < RowSize; i++) {
             for (int j = 0; j < ColumnSize; j++) {
-                if(StartPosition.isEqual(i,j))
+                if(StartPosition.equals(i,j))
                     out+="S";
-                else if(GoalPosition.isEqual(i,j))
+                else if(GoalPosition.equals(i,j))
                     out+="E";
                 else
                     out+=MazeTable[i][j];
