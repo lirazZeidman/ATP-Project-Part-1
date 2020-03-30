@@ -31,7 +31,7 @@ public class DepthFirstSearch extends ASearchingAlgorithm {
         }
 
 
-        return null;
+        return  new Solution(min);
     }
 
     @Override

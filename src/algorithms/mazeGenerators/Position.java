@@ -1,7 +1,5 @@
 package algorithms.mazeGenerators;
 
-import org.jetbrains.annotations.NotNull;
-
 public class Position  {
     private int RowIndex;
     private int ColumnIndex;
@@ -14,7 +12,7 @@ public class Position  {
         return RowIndex==row && ColumnIndex==col;
     }
 
-    public boolean equals(@NotNull Position p){
+    public boolean equals( Position p){
         return this.ColumnIndex==p.ColumnIndex && this.RowIndex==p.RowIndex;
     }
 

@@ -25,6 +25,7 @@ class main {
 ////        System.out.println((MMG.measureAlgorithmTimeMillis(1000,20000)));
         m.print();
 
+
         System.out.println("hi :)");
 
     }
