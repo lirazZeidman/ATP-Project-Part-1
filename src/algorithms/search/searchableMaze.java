@@ -17,7 +17,7 @@ import java.util.ArrayList;
             ArrayList<AState> arrState = new ArrayList<AState>();
             if (Position.class != StatePos.getCurNode().getClass())
                 return null;
-            //TODO implaent this function getMoveForSearcher
+
             ArrayList<Position> neighbors = maze.getMoveForSearcher((Position) StatePos.getCurNode()); // not sure this is the proper way to do it.
             for (Position tmpPos : neighbors) {
                 if (tmpPos.posNotDiagonallyTo((Position) StatePos.CurNode))

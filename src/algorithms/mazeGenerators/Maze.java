@@ -23,11 +23,7 @@ public class Maze {
     }
 
 
-
-
     public ArrayList<Position> getMoveForSearcher(Position pos){
-
-        //TODO we need to implant this shit ! ya shit
         if(pos==null) //if well return null -> will e a lot to check later.
             return new ArrayList<>() ;
         int row=pos.getRowIndex(),col=pos.getColumnIndex();
@@ -35,15 +31,21 @@ public class Maze {
         ArrayList<Position> searcherNeighbors = new ArrayList<Position>();
         for (Position tmpPos : neighbors){
             if(getPosValue(tmpPos)==1)
-                continue;
+                neighbors.remove(tmpPos);
+            }
+
+        for (Position tmpPos : neighbors){
             if(pos.posNotDiagonallyTo(tmpPos)) {
                 searcherNeighbors.add(tmpPos);
-                continue;}
 
-
+                ArrayList<Position> tmpNeighbors = getAllNeighbors(tmpPos);
+                for(Position tmpPos1 : tmpNeighbors){
+                    if(getPosValue(tmpPos1)==0 && searcherNeighbors.contains(tmpPos1))
+                        searcherNeighbors.add(tmpPos);
+                }
+            }
         }
-
-        return
+        return searcherNeighbors;
     }
 
     protected ArrayList<Position> getAllNeighbors(Position pos){

@@ -10,7 +10,7 @@ public class BreadthFirstSearch extends ASearchingAlgorithm {
 
     @Override
     public String getName() {
-        return null;
+        return "BreadthFirstSearch";
     }
 
 
