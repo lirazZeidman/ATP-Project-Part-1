@@ -12,7 +12,7 @@ class main {
 //        int[][] v = new int[0][0];
 
 //        EmptyMazeGenerator Emg= new EmptyMazeGenerator();
-//        algorithms.mazeGenerators.Maze maze3 =  Emg.generate(3,3);
+//        algorithms.mazeGenerators.Maze maze3 =Emg.generate(3,3);
 //        maze3.print();
 //        SimpleMazeGenerator SMG= new SimpleMazeGenerator();
 //        algorithms.mazeGenerators.Maze test1= SMG.generate(4,4);

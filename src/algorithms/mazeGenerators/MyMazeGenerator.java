@@ -26,7 +26,7 @@ public class MyMazeGenerator extends AMazeGenerator {
 
             if (!isValidNextMove(nextPos)) continue;
             maze.getMazeTable()[nextPos.getRowIndex()][nextPos.getColumnIndex()]=0;
-            ArrayList<Position> neighbors= maze.getNextMoveNeighbors(nextPos);
+            ArrayList<Position> neighbors= maze.getMoveForGenerate(nextPos);
             randomlyAddsNextPositionsToStack(neighbors);
         }
         lastE();
@@ -40,7 +40,7 @@ public class MyMazeGenerator extends AMazeGenerator {
         }
     }
     private boolean isValidNextMove(Position nextPos) {
-        ArrayList<Position> NextMoveNeighbors=maze.getNextMoveNeighbors(nextPos);
+        ArrayList<Position> NextMoveNeighbors=maze.getMoveForGenerate(nextPos);
         return NextMoveNeighbors.size()>2 && maze.getPosValue(nextPos)==1;
 
     }

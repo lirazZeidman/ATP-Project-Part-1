@@ -1,7 +1,6 @@
 package algorithms.mazeGenerators;
 
 import java.util.ArrayList;
-//TODO check what MAze return
 public class Maze {
     protected int ColumnSize;
     protected int RowSize;
@@ -23,31 +22,57 @@ public class Maze {
         GoalPosition= new Position(rowSize-1,columnSize-2);
     }
 
-    protected ArrayList<Position> getNeighbors(Position pos){
-        if(pos==null) //if well rerturn null -> will e alot to check later.
+
+
+
+    public ArrayList<Position> getMoveForSearcher(Position pos){
+
+        //TODO we need to implant this shit ! ya shit
+        if(pos==null) //if well return null -> will e a lot to check later.
+            return new ArrayList<>() ;
+        int row=pos.getRowIndex(),col=pos.getColumnIndex();
+        ArrayList<Position> neighbors = getAllNeighbors(pos);
+        ArrayList<Position> searcherNeighbors = new ArrayList<Position>();
+        for (Position tmpPos : neighbors){
+            if(getPosValue(tmpPos)==1)
+                continue;
+            if(pos.posNotDiagonallyTo(tmpPos)) {
+                searcherNeighbors.add(tmpPos);
+                continue;}
+
+
+        }
+
+        return
+    }
+
+    protected ArrayList<Position> getAllNeighbors(Position pos){
+        /**
+         * returns with the
+         */
+        if(pos==null) //if well return null -> will e a lot to check later.
             return new ArrayList<>() ;
         int row=pos.getRowIndex(),col=pos.getColumnIndex();
         Position tmpPos = null;
         ArrayList<Position> neighbors = new ArrayList<>();
         for (int r=row-1;r<row+2;r++) for(int c=col-1;c<col+2;c++) { //checks all 9 possible positions from the left top point
             tmpPos = new Position(r, c);
-            if (PosOnMazeTable(tmpPos) && (!pos.isEqual(tmpPos)) && pos.posNotDiagonallyTo(tmpPos))
+            if (PosOnMazeTable(tmpPos) && (!pos.isEqual(tmpPos)) )
                 neighbors.add(tmpPos);
         }
         return neighbors;
     }
 
-    protected ArrayList<Position> getNextMoveNeighbors(Position pos) {
+    protected ArrayList<Position> getMoveForGenerate(Position pos) {
         //dealing if pos=null i getNeighbors func.
-        ArrayList<Position> neighbors = getNeighbors(pos);
+        ArrayList<Position> neighbors = getAllNeighbors(pos);
         ArrayList<Position> NextMoveNeighbors = new ArrayList<>();
         for (Position tmpPos : neighbors)
-            if (getPosValue(tmpPos) == 1)
+            if (getPosValue(tmpPos) == 1 && pos.posNotDiagonallyTo(tmpPos))
                 NextMoveNeighbors.add(tmpPos);
 
         return NextMoveNeighbors;
     }
-
 
     protected boolean PosOnMazeTable(Position nextPos){
         if (nextPos==null)
