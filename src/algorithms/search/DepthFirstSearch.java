@@ -43,12 +43,6 @@ public class DepthFirstSearch extends ASearchingAlgorithm {
     }
 
 
-    public boolean ListContains(ArrayList<AState> lst, AState tocomp) {
-        for (AState state : lst) {
-            if (state.equals(tocomp))
-                return true;
-        }
-        return false;
-    }
+
 
 }

@@ -54,7 +54,7 @@ public class MyMazeGenerator extends AMazeGenerator {
         int row=0,column = 0;
         while (max>1)  {
              row= max/maze.getColumnSize();
-             column= max/maze.getRowSize();
+             column= max%(maze.getColumnSize());
             if (maze.MazeTable[row][column]==0){
                 maze.GoalPosition= new Position(row+1,column);
                 maze.MazeTable[row+1][column]=0;
@@ -62,7 +62,6 @@ public class MyMazeGenerator extends AMazeGenerator {
             }
             max--;
         }
-        maze.MazeTable[row+1][column]=0;
     }
 
 

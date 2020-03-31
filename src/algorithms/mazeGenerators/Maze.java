@@ -58,10 +58,11 @@ public class Maze {
         if(pos==null) //if well return null -> will e a lot to check later.
             return new ArrayList<>() ;
         int row=pos.getRowIndex(),col=pos.getColumnIndex();
-        Position tmpPos = null;
+        Position tmpPos;
         ArrayList<Position> neighbors = new ArrayList<>();
-        for (int r=row-1;r<row+2;r++) for(int c=col-1;c<col+2;c++) { //checks all 9 possible positions from the left top point
-            tmpPos = new Position(r, c);
+        int [][] arr= {{row-1,col},{row-1,col+1},{row,col+1},{row+1,col+1},{row+1,col},{row+1,col-1},{row,col-1},{row-1,col-1}};
+        for (int[] arg:arr){
+        tmpPos = new Position(arg[0], arg[1]);
             if (PosOnMazeTable(tmpPos) && (!pos.equals(tmpPos)) )
                 neighbors.add(tmpPos);
         }
