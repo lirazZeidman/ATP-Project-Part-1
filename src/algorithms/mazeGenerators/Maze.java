@@ -38,14 +38,11 @@ public class Maze {
         for (Position tmpPos : RevNeighbors){
             if(pos.posNotDiagonallyTo(tmpPos)) {
                 searcherNeighbors.add(tmpPos);
-
                 ArrayList<Position> tmpNeighbors = getAllNeighbors(tmpPos);
                 for(Position tmpPos1 : tmpNeighbors){
                     if(getPosValue(tmpPos1)==0 && searcherNeighbors.contains(tmpPos1))
                         searcherNeighbors.add(tmpPos);
                 }
-
-
             }
         }
         return searcherNeighbors;

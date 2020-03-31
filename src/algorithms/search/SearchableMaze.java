@@ -26,9 +26,6 @@ import java.util.ArrayList;
             }
             return arrState;
 
-
-
-
         }
 
         @Override
