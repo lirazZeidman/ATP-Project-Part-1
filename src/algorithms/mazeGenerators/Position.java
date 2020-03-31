@@ -10,8 +10,10 @@ public class Position  {
     }
 
     public Position(String rowIndexColumnIndex) { //position can be anything, were checking if the pos on the board in diffrent function
-        String row=rowIndexColumnIndex.substring(1,2);
-        String col=rowIndexColumnIndex.substring(3,4);
+        int index1=rowIndexColumnIndex.indexOf(",");
+        String row=rowIndexColumnIndex.substring(1,index1);
+        int index2=rowIndexColumnIndex.indexOf("}", 1);
+        String col=rowIndexColumnIndex.substring(index1+1,index2);
         RowIndex =Integer.parseInt(row) ;
         ColumnIndex =Integer.parseInt(col);
     }

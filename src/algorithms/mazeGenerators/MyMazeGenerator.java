@@ -45,7 +45,7 @@ public class MyMazeGenerator extends AMazeGenerator {
     }
     private boolean isValidNextMove(Position nextPos) {
         ArrayList<Position> NextMoveNeighbors=maze.getMoveForGenerate(nextPos);
-        return NextMoveNeighbors.size()>2 && maze.getPosValue(nextPos)==1;
+        return NextMoveNeighbors.size()>3 && maze.getPosValue(nextPos)==1;
 
     }
 

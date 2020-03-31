@@ -17,7 +17,7 @@ public class DepthFirstSearch extends ASearchingAlgorithm {
         while (!stack.empty()) {
             NumberOfNodesEvaluated++;
             AState node = stack.pop();
-            if (maze.AreWeThereYet(node)) //checks if reach the goal and if minmum
+            if (maze.AreWeThereYet(node)) //checks if reach the goal and if minimum
                 if (node.Cost < tmp_min) {
                     tmp_min = node.Cost;
                     min = node;
