@@ -57,6 +57,7 @@ public class MyMazeGenerator extends AMazeGenerator {
              column= max/maze.getRowSize();
             if (maze.MazeTable[row][column]==0){
                 maze.GoalPosition= new Position(row+1,column);
+                maze.MazeTable[row+1][column]=0;
                 break;
             }
             max--;

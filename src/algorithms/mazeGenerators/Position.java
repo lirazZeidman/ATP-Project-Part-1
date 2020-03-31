@@ -12,9 +12,11 @@ public class Position  {
         return RowIndex==row && ColumnIndex==col;
     }
 
-    public boolean equals( Position p){
+    public boolean isEqual( Position p){
         return this.ColumnIndex==p.ColumnIndex && this.RowIndex==p.RowIndex;
     }
+
+
 
     public void setPosition(int rowIndex,int columnIndex){
         this.setRowIndex(rowIndex);
