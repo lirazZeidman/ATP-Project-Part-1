@@ -11,10 +11,11 @@ public class Position  {
 
     public Position(String rowIndexColumnIndex) { //position can be anything, were checking if the pos on the board in diffrent function
         String row=rowIndexColumnIndex.substring(1,2);
-        String col=rowIndexColumnIndex.substring(3,4)
+        String col=rowIndexColumnIndex.substring(3,4);
         RowIndex =Integer.parseInt(row) ;
         ColumnIndex =Integer.parseInt(col);
     }
+
     public boolean equals(int row, int col){
         return RowIndex==row && ColumnIndex==col;
     }
@@ -22,8 +23,6 @@ public class Position  {
     public boolean isEqual( Position p){
         return this.ColumnIndex==p.ColumnIndex && this.RowIndex==p.RowIndex;
     }
-
-
 
     public void setPosition(int rowIndex,int columnIndex){
         this.setRowIndex(rowIndex);

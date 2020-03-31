@@ -43,7 +43,7 @@ import java.util.ArrayList;
         }
 
         public boolean AreWeThereYet(AState state) {
-            return ((Position) getGoal().getCurNode()).equals((Position) state.getCurNode());
+            return (getGoal().getCurNode()).equals( state.getCurNode());
 
         }
 
