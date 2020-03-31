@@ -14,13 +14,18 @@ public class BreadthFirstSearch extends ASearchingAlgorithm {
 
         AState minCostState=null;
         int minCost=Integer.MAX_VALUE;
+
         queue.add(maze.getStart());
         while(!queue.isEmpty()) {
             AState state = queue.poll();
-            if(state.CurNode.equals(maze.getGoal()))
-                if(minCost>state.Cost)
-                    minCostState=state;
-            if (!visited.contains(state)) {
+            if (maze.AreWeThereYet(state)) {//checks if reach the goal and if minmum
+                if (state.Cost < minCost) {
+                    minCost = state.Cost;
+                    minCostState = state;
+
+                }
+            }
+            else if (!visited.contains(state)) {
                 visited.add(state);
 
                 ArrayList<AState> neighbors=maze.getAllPossibleStates(state);

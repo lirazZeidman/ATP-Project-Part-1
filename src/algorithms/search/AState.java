@@ -1,5 +1,7 @@
 package algorithms.search;
 
+import org.jetbrains.annotations.NotNull;
+
 public abstract class AState {
     protected Object CurNode; //distance or cost up to this point
     protected int Cost=0; // the cost of this point
@@ -27,7 +29,7 @@ public abstract class AState {
 
     abstract public String toString();
 
-    public boolean equals(AState b){
+    public boolean equals(@NotNull AState b){
         return this.CurNode.equals(b.CurNode);
     }
 }

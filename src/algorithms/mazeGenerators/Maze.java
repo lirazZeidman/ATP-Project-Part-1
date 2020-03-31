@@ -29,12 +29,13 @@ public class Maze {
         int row=pos.getRowIndex(),col=pos.getColumnIndex();
         ArrayList<Position> neighbors = getAllNeighbors(pos);
         ArrayList<Position> searcherNeighbors = new ArrayList<Position>();
+        ArrayList<Position> RevNeighbors = new ArrayList<Position>();
         for (Position tmpPos : neighbors){
-            if(getPosValue(tmpPos)==1)
-                neighbors.remove(tmpPos);
+            if(getPosValue(tmpPos)==0)
+                RevNeighbors.add(tmpPos);
             }
 
-        for (Position tmpPos : neighbors){
+        for (Position tmpPos : RevNeighbors){
             if(pos.posNotDiagonallyTo(tmpPos)) {
                 searcherNeighbors.add(tmpPos);
 

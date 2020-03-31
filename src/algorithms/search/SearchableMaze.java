@@ -5,10 +5,10 @@ import algorithms.mazeGenerators.Position;
 
 import java.util.ArrayList;
 
-    public class searchableMaze implements ISearchable {
+    public class SearchableMaze implements ISearchable {
         private Maze maze;
 
-        public searchableMaze(Maze maze) {
+        public SearchableMaze(Maze maze) {
             this.maze = maze;
         }
 

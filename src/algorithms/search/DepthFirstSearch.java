@@ -8,7 +8,7 @@ public class DepthFirstSearch extends ASearchingAlgorithm {
 
     @Override
     public Solution solve(ISearchable maze) {
-        ArrayList<AState> VistiedState = new ArrayList<AState>();
+        ArrayList<AState> VisitedState = new ArrayList<AState>();
         Stack<AState> stack = new Stack<AState>();
         AState min = null;
         int tmp_min = Integer.MAX_VALUE;
@@ -20,11 +20,11 @@ public class DepthFirstSearch extends ASearchingAlgorithm {
                     tmp_min = node.Cost;
                     min = node;
                 }
-            if (!ListContains(VistiedState, node)) { //checks if vistied
-                VistiedState.add(node);
+            if (!ListContains(VisitedState, node)) { //checks if vistied
+                VisitedState.add(node);
                 ArrayList<AState> neighbors = maze.getAllPossibleStates(node); //checks all the
                 for (AState neighbor : neighbors)
-                    if (!ListContains(VistiedState, neighbor)) {
+                    if (!ListContains(VisitedState, neighbor)) {
                         stack.push(neighbor);
                     }
             }
