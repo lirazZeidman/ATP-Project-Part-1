@@ -8,7 +8,7 @@ import java.util.ArrayList;
 class main {
     public static void main(String[] args) {
         IMazeGenerator mg = new MyMazeGenerator();
-        Maze maze = mg.generate(3, 3);
+        Maze maze = mg.generate(4, 4);
         maze.print();
         SearchableMaze searchableMaze = new SearchableMaze(maze);
         solveProblem(searchableMaze, new BreadthFirstSearch());
@@ -23,6 +23,7 @@ class main {
                 //Printing Solution Path
         System.out.println("Solution path:");
         ArrayList<AState> solutionPath = solution.getSolutionPath();
+        System.out.println(solution.getCost());
         for (int i = 0; i < solutionPath.size(); i++) {
             System.out.println(String.format("%s.%s",i,solutionPath.get(i)));
         }

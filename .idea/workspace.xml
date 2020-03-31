@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d3122e4-a9af-4ca7-a112-fdf32e54792e" name="Default Changelist" comment="">
+    <list default="true" id="6d3122e4-a9af-4ca7-a112-fdf32e54792e" name="Default Changelist" comment="Mase class and Position class update">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP-Project Part 1/algorithms/mazeGenerators/Maze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP-Project Part 1/algorithms/mazeGenerators/Maze.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ATP-Project Part 1/algorithms/mazeGenerators/MyMazeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP-Project Part 1/algorithms/mazeGenerators/MyMazeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATP-Project Part 1/algorithms/search/ASearchingAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP-Project Part 1/algorithms/search/ASearchingAlgorithm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ATP-Project Part 1/algorithms/search/BreadthFirstSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP-Project Part 1/algorithms/search/BreadthFirstSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATP-Project Part 1/algorithms/search/DepthFirstSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP-Project Part 1/algorithms/search/DepthFirstSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATP-Project Part 1/test/RunSearchOnMaze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP-Project Part 1/test/RunSearchOnMaze.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/mazeGenerators/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/mazeGenerators/Maze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/mazeGenerators/MyMazeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/mazeGenerators/MyMazeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP-Project Part 1/algorithms/search/SearchableMaze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP-Project Part 1/algorithms/search/SearchableMaze.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP-Project Part 1/algorithms/search/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP-Project Part 1/algorithms/search/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP-Project Part 1/test/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP-Project Part 1/test/main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithms/search/ASearchingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/search/ASearchingAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithms/search/BreadthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/search/BreadthFirstSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithms/search/DepthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/search/DepthFirstSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/RunSearchOnMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/RunSearchOnMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/search/SearchableMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/search/SearchableMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/search/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/search/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +92,7 @@
       <recent name="C:\Users\danii\Desktop\Dani\Semster 3\ATP-Project-Part-1\algorithms" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RunSearchOnMaze">
+  <component name="RunManager" selected="Application.main (1)">
     <configuration name="RunMazeGenerator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.RunMazeGenerator" />
       <module name="ATP-Project Part 1" />
@@ -118,9 +120,22 @@
       </method>
     </configuration>
     <configuration name="RunSearchOnMaze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_241" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="test.RunSearchOnMaze" />
+      <module name="ATP-Project Part 1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.main" />
       <module name="ATP-Project Part 1" />
       <extension name="coverage">
         <pattern>
@@ -144,9 +159,11 @@
       <item itemvalue="Application.RunMazeGenerator" />
       <item itemvalue="Application.RunMazeGenerator (1)" />
       <item itemvalue="Application.RunSearchOnMaze" />
+      <item itemvalue="Application.main (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main (1)" />
         <item itemvalue="Application.RunSearchOnMaze" />
         <item itemvalue="Application.RunMazeGenerator (1)" />
         <item itemvalue="Application.main" />
@@ -170,6 +187,7 @@
       <workItem from="1585394313098" duration="466000" />
       <workItem from="1585490371132" duration="7862000" />
       <workItem from="1585669991554" duration="3637000" />
+      <workItem from="1585677303568" duration="7687000" />
     </task>
     <task id="LOCAL-00001" summary="|DAnis update">
       <created>1585321119571</created>
@@ -353,28 +371,7 @@
       <option name="project" value="LOCAL" />
       <updated>1585676659104</updated>
     </task>
-    <task id="LOCAL-00027" summary="Mase class and Position class update">
-      <created>1585676831992</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1585676831992</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Mase class and Position class update">
-      <created>1585676837736</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1585676837736</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Mase class and Position class update">
-      <created>1585676930512</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1585676930512</updated>
-    </task>
-    <option name="localTasksCounter" value="30" />
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,15 +431,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="70" key="#Project_Structure/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585418283784" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585677417779">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585677425946">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585677417779" />
-    <state x="574" y="113" width="388" height="408" key="#com.intellij.ide.util.MemberChooser" timestamp="1585673233260">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585677425946" />
+    <state x="574" y="113" width="388" height="408" key="#com.intellij.ide.util.MemberChooser" timestamp="1585678102305">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="113" width="388" height="408" key="#com.intellij.ide.util.MemberChooser/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585673233260" />
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585325340096" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585678102305" />
     <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585602100941">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -467,64 +464,87 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="279" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585586562722" />
-    <state x="345" y="6" key="CommitChangelistDialog2" timestamp="1585676929407">
+    <state x="345" y="6" key="CommitChangelistDialog2" timestamp="1585678913177">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="345" y="6" key="CommitChangelistDialog2/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585676929407" />
-    <state x="345" y="6" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585598078707" />
+    <state x="345" y="6" key="CommitChangelistDialog2/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585676830800" />
+    <state x="345" y="6" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585678913177" />
     <state x="345" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585323036373" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1585321247883">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585321247883" />
-    <state x="549" y="138" key="FileChooserDialogImpl" timestamp="1585493596201">
+    <state x="549" y="138" key="FileChooserDialogImpl" timestamp="1585677420856">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="138" key="FileChooserDialogImpl/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585493596201" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1585689462958">
+    <state x="549" y="138" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585677420856" />
+    <state x="13" y="550" width="1132" height="221" key="GridCell.Tab.-1.bottom" timestamp="1585679448856">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585689462958" />
-    <state width="1493" height="44" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585595913518" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1585689462958">
+    <state x="13" y="550" width="1132" height="221" key="GridCell.Tab.-1.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585679448856" />
+    <state x="13" y="550" width="1132" height="221" key="GridCell.Tab.-1.center" timestamp="1585679448856">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585689462958" />
-    <state width="1493" height="44" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585595913518" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1585689462958">
+    <state x="13" y="550" width="1132" height="221" key="GridCell.Tab.-1.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585679448856" />
+    <state x="13" y="550" width="1132" height="221" key="GridCell.Tab.-1.left" timestamp="1585679448856">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585689462958" />
-    <state width="1493" height="44" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585595913517" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1585689462958">
+    <state x="13" y="550" width="1132" height="221" key="GridCell.Tab.-1.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585679448856" />
+    <state x="13" y="550" width="1132" height="221" key="GridCell.Tab.-1.right" timestamp="1585679448856">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585689462958" />
-    <state width="1493" height="44" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585595913518" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1585689463193">
+    <state x="13" y="550" width="1132" height="221" key="GridCell.Tab.-1.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585679448856" />
+    <state width="1129" height="261" key="GridCell.Tab.0.bottom" timestamp="1585689510173">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585689463193" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1585689463193">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585676772988" />
+    <state width="1129" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585689510173" />
+    <state width="1129" height="261" key="GridCell.Tab.0.center" timestamp="1585689510172">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585689463193" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1585689463192">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585676772987" />
+    <state width="1129" height="261" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585689510172" />
+    <state width="1129" height="261" key="GridCell.Tab.0.left" timestamp="1585689510172">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585689463192" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1585689463193">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585676772987" />
+    <state width="1129" height="261" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585689510172" />
+    <state width="1129" height="261" key="GridCell.Tab.0.right" timestamp="1585689510173">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585689463193" />
-    <state x="147" y="65" key="MergeDialog" timestamp="1585673067122">
+    <state width="1493" height="261" key="GridCell.Tab.0.right/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585676772987" />
+    <state width="1129" height="261" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585689510173" />
+    <state x="807" y="472" width="1132" height="221" key="GridCell.Tab.1.bottom" timestamp="1585679442825">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585676773207" />
+    <state x="807" y="472" width="1132" height="221" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585679442825" />
+    <state x="807" y="472" width="1132" height="221" key="GridCell.Tab.1.center" timestamp="1585679442825">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585676773206" />
+    <state x="807" y="472" width="1132" height="221" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585679442825" />
+    <state x="807" y="472" width="1132" height="221" key="GridCell.Tab.1.left" timestamp="1585679442825">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585676773206" />
+    <state x="807" y="472" width="1132" height="221" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585679442825" />
+    <state x="807" y="472" width="1132" height="221" key="GridCell.Tab.1.right" timestamp="1585679442825">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585676773207" />
+    <state x="807" y="472" width="1132" height="221" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585679442825" />
+    <state x="147" y="65" key="MergeDialog" timestamp="1585689931688">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="147" y="65" key="MergeDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585673067122" />
-    <state x="481" y="128" key="MultipleFileMergeDialog" timestamp="1585673069710">
+    <state x="147" y="65" key="MergeDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585689931688" />
+    <state x="481" y="128" key="MultipleFileMergeDialog" timestamp="1585689935492">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="481" y="128" key="MultipleFileMergeDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585673069710" />
+    <state x="481" y="128" key="MultipleFileMergeDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585689935492" />
     <state x="482" y="122" key="RollbackChangesDialog" timestamp="1585321288565">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -541,21 +561,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="612" y="327" key="VCS.ChangelistChooser/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585418469536" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1585676881357">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1585676672668">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585676881357" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585676672668" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585598088253" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585323040845" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1585669992981">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585669992981" />
-    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585672989716">
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585689676868">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585672989716" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585689676868" />
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1585323096060" />
+    <state x="13" y="550" width="743" height="231" key="dock-window-1" timestamp="1585679481175">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="13" y="550" width="743" height="231" key="dock-window-1/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585679481175" />
     <state x="499" y="167" width="538" height="496" key="extract.method.dialog" timestamp="1585600546882">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -581,15 +606,30 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/algorithms/search/DepthFirstSearch.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/src/algorithms/search/BreadthFirstSearch.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/algorithms/mazeGenerators/Maze.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/algorithms/mazeGenerators/Maze.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/algorithms/mazeGenerators/Maze.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ATP_Project_Part_1$RunSearchOnMaze.ic" NAME="RunSearchOnMaze Coverage Results" MODIFIED="1585678890358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/ATP_Project_Part_1$main__1_.ic" NAME="main (1) Coverage Results" MODIFIED="1585678951770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.*</FILTER>
     </SUITE>
   </component>
