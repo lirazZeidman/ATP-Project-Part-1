@@ -24,7 +24,7 @@ public class Maze {
 
 
     public ArrayList<Position> getMoveForSearcher(Position pos){
-        if(pos==null) //if well return null -> will e a lot to check later.
+        if(pos==null) //if we'll return null -> will be a lot to check later.
             return new ArrayList<>() ;
         int row=pos.getRowIndex(),col=pos.getColumnIndex();
         ArrayList<Position> neighbors = getAllNeighbors(pos);
@@ -40,12 +40,19 @@ public class Maze {
                 searcherNeighbors.add(tmpPos);
                 ArrayList<Position> tmpNeighbors = getAllNeighbors(tmpPos);
                 for(Position tmpPos1 : tmpNeighbors){
-                    if(getPosValue(tmpPos1)==0 && searcherNeighbors.contains(tmpPos1))
-                        searcherNeighbors.add(tmpPos);
+                    if(getPosValue(tmpPos1)==0 && ListContains(RevNeighbors,tmpPos1)&& !ListContains(searcherNeighbors,tmpPos1))
+                        searcherNeighbors.add(tmpPos1);
                 }
             }
         }
         return searcherNeighbors;
+    }
+    public boolean ListContains(ArrayList<Position> lst, Position tocomp) {
+        for (Position pos : lst) {
+            if (pos.isEqual(tocomp))
+                return true;
+        }
+        return false;
     }
 
     protected ArrayList<Position> getAllNeighbors(Position pos){
@@ -112,7 +119,7 @@ public class Maze {
 
 
     public void print(){
-        String out="";
+        /*String out="";
         for (int i = 0; i < RowSize; i++) {
             for (int j = 0; j < ColumnSize; j++) {
                 if(StartPosition.equals(i,j))
@@ -124,7 +131,20 @@ public class Maze {
             }
             out+="\n";
         }
-        System.out.println(out);
+        System.out.println(out);*/
+
+        for (int i = 0; i < RowSize; i++) {
+            for (int j = 0; j < ColumnSize; j++) {
+                if(StartPosition.equals(i,j))
+                    System.out.print("S");
+                else if(GoalPosition.equals(i,j))
+                    System.out.print("E");
+                else
+                    System.out.print(MazeTable[i][j]);
+            }
+            System.out.println();
+        }
+
 
     }
 
