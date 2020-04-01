@@ -28,8 +28,8 @@ public class Maze {
             return new ArrayList<>() ;
         int row=pos.getRowIndex(),col=pos.getColumnIndex();
         ArrayList<Position> neighbors = getAllNeighbors(pos);
-        ArrayList<Position> searcherNeighbors = new ArrayList<Position>();
-        ArrayList<Position> RevNeighbors = new ArrayList<Position>();
+        ArrayList<Position> searcherNeighbors = new ArrayList<>();
+        ArrayList<Position> RevNeighbors = new ArrayList<>();
         for (Position tmpPos : neighbors){
             if(getPosValue(tmpPos)==0)
                 RevNeighbors.add(tmpPos);
@@ -56,9 +56,7 @@ public class Maze {
     }
 
     protected ArrayList<Position> getAllNeighbors(Position pos){
-        /**
-         * returns with the
-         */
+
         if(pos==null) //if well return null -> will e a lot to check later.
             return new ArrayList<>() ;
         int row=pos.getRowIndex(),col=pos.getColumnIndex();
@@ -141,6 +139,7 @@ public class Maze {
                     System.out.print("E");
                 else
                     System.out.print(MazeTable[i][j]);
+
             }
             System.out.println();
         }
