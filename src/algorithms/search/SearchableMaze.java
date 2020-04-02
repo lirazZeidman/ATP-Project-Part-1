@@ -19,7 +19,7 @@ import java.util.ArrayList;
             Position pos = new Position(StatePos.getCurNode());
             ArrayList<Position> neighbors = maze.getMoveForSearcher(pos); // not sure this is the proper way to do it.
             for (Position tmpPos : neighbors) {
-                if (tmpPos.posNotDiagonallyTo(pos))
+                if (pos.posNotDiagonallyTo(tmpPos))
                     arrState.add(new MazeState(tmpPos, StatePos, StatePos.getCost()+10));
                 else
                     arrState.add(new MazeState(tmpPos, StatePos, StatePos.getCost()+15));
