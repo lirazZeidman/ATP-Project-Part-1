@@ -12,7 +12,7 @@ class Main {
 
     public static void main(String[] args) {
         IMazeGenerator mg = new MyMazeGenerator();
-        Maze maze = mg.generate(5, 8);
+        Maze maze = mg.generate(100, 100);
         maze.print();
         SearchableMaze searchableMaze = new SearchableMaze(maze);
         solveProblem(searchableMaze, new BreadthFirstSearch());
