@@ -1,3 +1,5 @@
+package test;
+
 import algorithms.mazeGenerators.*;
 import algorithms.search.*;
 import java.util.ArrayList;

@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d3122e4-a9af-4ca7-a112-fdf32e54792e" name="Default Changelist" comment="Mase class and Position class update">
-      <change afterPath="$PROJECT_DIR$/src/test/algorithms/search/BestFirstSearchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JUnit/JUnitTestingBestFirstSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/search/BestFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/search/BestFirstSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/search/BreadthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/search/BreadthFirstSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATP-Project Part 1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ATP-Project Part 1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/RunMazeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/RunMazeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/algorithms/search/BreadthFirstSearchTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/algorithms/search/BestFirstSearchTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,9 +82,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -102,7 +102,7 @@
       <recent name="C:\Users\danii\Desktop\Dani\Semster 3\ATP-Project-Part-1\algorithms" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BestFirstSearchTest.TestSoltion">
+  <component name="RunManager" selected="JUnit.JUnitTestingBestFirstSearch">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ATP-Project Part 1" />
@@ -115,22 +115,7 @@
       <module name="ATP-Project Part 1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RunSearchOnMaze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="test.RunSearchOnMaze" />
-      <module name="ATP-Project Part 1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,7 +127,7 @@
       <module name="ATP-Project Part 1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithms.search.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,36 +138,73 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BestFirstSearchTest.TestSoltion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JUnit in ATP-Project Part 1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ATP-Project Part 1" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithms.search.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="algorithms.search" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.search.BestFirstSearchTest" />
-      <option name="METHOD_NAME" value="TestSoltion" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="directory" />
+      <option name="PARAMETERS" value="" />
+      <dir value="$PROJECT_DIR$/src/JUnit" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JUnitTestingBestFirstSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ATP-Project Part 1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JUnitTestingBestFirstSearch" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test in ATP-Project Part 1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ATP-Project Part 1" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="directory" />
+      <option name="PARAMETERS" value="" />
+      <dir value="$PROJECT_DIR$/src/test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.RunSearchOnMaze" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
-      <item itemvalue="JUnit.BestFirstSearchTest.TestSoltion" />
-      <item itemvalue="JUnit.BestFirstSearchTest" />
+      <item itemvalue="JUnit.test in ATP-Project Part 1" />
+      <item itemvalue="JUnit.JUnit in ATP-Project Part 1" />
+      <item itemvalue="JUnit.JUnitTestingBestFirstSearch" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BestFirstSearchTest.TestSoltion" />
-        <item itemvalue="JUnit.BestFirstSearchTest" />
+        <item itemvalue="JUnit.JUnitTestingBestFirstSearch" />
+        <item itemvalue="JUnit.test in ATP-Project Part 1" />
+        <item itemvalue="JUnit.JUnitTestingBestFirstSearch" />
+        <item itemvalue="JUnit.JUnit in ATP-Project Part 1" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.RunSearchOnMaze" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +228,7 @@
       <workItem from="1585833187612" duration="1418000" />
       <workItem from="1585839214349" duration="3346000" />
       <workItem from="1585845052519" duration="2513000" />
+      <workItem from="1585847839575" duration="2995000" />
     </task>
     <task id="LOCAL-00001" summary="|DAnis update">
       <created>1585321119571</created>
@@ -477,27 +500,37 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="70" key="#Project_Structure/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585418283784" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585677425946">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585849946750">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585677425946" />
-    <state x="574" y="113" width="388" height="408" key="#com.intellij.ide.util.MemberChooser" timestamp="1585845215285">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585849946750" />
+    <state x="574" y="113" width="388" height="408" key="#com.intellij.ide.util.MemberChooser" timestamp="1585848428262">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="113" width="388" height="408" key="#com.intellij.ide.util.MemberChooser/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585845215285" />
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585678102305" />
-    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585845067200">
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585848428262" />
+    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585849649768">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585849649768" />
+    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585847845652">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585845067200" />
+    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1585847845652" />
+    <state x="599" y="123" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1585849192189">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="599" y="123" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585849192189" />
     <state x="405" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585416819132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="405" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585416819132" />
-    <state x="566" y="297" width="403" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585845062639">
+    <state x="566" y="297" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585849813724">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="566" y="297" width="403" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585845062639" />
+    <state x="566" y="297" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585849813724" />
     <state x="566" y="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1585416820430">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -524,11 +557,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585321247883" />
-    <state x="549" y="138" key="FileChooserDialogImpl" timestamp="1585677420856">
+    <state x="549" y="138" key="FileChooserDialogImpl" timestamp="1585849981331">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="138" key="FileChooserDialogImpl/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585493596201" />
-    <state x="549" y="138" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585677420856" />
+    <state x="549" y="138" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585849981331" />
     <state x="13" y="550" width="1132" height="221" key="GridCell.Tab.-1.bottom" timestamp="1585679448856">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -603,10 +636,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="482" y="122" key="RollbackChangesDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585321288565" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1585321393144">
+    <state x="166" y="0" key="SettingsEditor" timestamp="1585849990719">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585321393144" />
+    <state x="166" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585849990719" />
     <state x="490" y="154" width="540" height="524" key="StructurePopup" timestamp="1585591798134">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -629,20 +663,23 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585669992981" />
-    <state x="498" y="305" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585847718599">
+    <state x="498" y="305" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585849765814">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="305" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585847718599" />
+    <state x="498" y="305" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585849765814" />
+    <state x="498" y="305" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1585847868022" />
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585847773081">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585847773081" />
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585689676868" />
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1585323096060" />
-    <state x="540" y="130" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585847727599">
+    <state x="540" y="130" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585848155114">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="130" key="com.intellij.testIntegration.createTest.CreateTestDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585847727599" />
+    <state x="540" y="130" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585848155114" />
     <state x="13" y="550" width="743" height="231" key="dock-window-1" timestamp="1585679481175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -668,10 +705,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585841785298" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585827069975">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585849292138">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585591707627" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585849292138" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585827069975" />
   </component>
   <component name="XDebuggerManager">
@@ -686,11 +724,11 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ATP_Project_Part_1$main__1_.ic" NAME="main (1) Coverage Results" MODIFIED="1585678951770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>test.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/ATP_Project_Part_1$BestFirstSearchTest.ic" NAME="BestFirstSearchTest Coverage Results" MODIFIED="1585847728059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>algorithms.search.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ATP_Project_Part_1$main__1_.ic" NAME="main (1) Coverage Results" MODIFIED="1585678951770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test.*</FILTER>
     </SUITE>
   </component>
 </project>
