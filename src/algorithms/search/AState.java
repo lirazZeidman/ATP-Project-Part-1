@@ -31,6 +31,15 @@ public abstract class AState {
     public  boolean equals(AState b){
         return getCurNode().equals(b.CurNode);
     }
+
+//   public int compare(AState other){
+//       int tCost=this.Cost,oCost=other.Cost;
+//       if(tCost==oCost)
+//           return 0;
+//       if(tCost>oCost)
+//           return 1;
+//       return -1;
+//   }
 }
 
 

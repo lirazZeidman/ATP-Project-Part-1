@@ -10,6 +10,7 @@ public abstract class ASearchingAlgorithm implements ISearchingAlgorithm {
     public int getNumberOfNodesEvaluated() {
         return NumberOfNodesEvaluated;
     }
+
     public boolean ListContains(ArrayList<AState> lst, AState tocomp) {
         for (AState pos : lst) {
             if (pos.equals(tocomp))
