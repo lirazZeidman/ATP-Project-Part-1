@@ -14,9 +14,9 @@ public class RunSearchOnMaze {
         SearchableMaze searchableMaze = new SearchableMaze(maze);
 
         //solveProblem(searchableMaze, new BreadthFirstSearch());
-//        solveProblem(searchableMaze, new BestFirstSearch());
-        //solveProblem(searchableMaze, new DepthFirstSearch());
-        solveProblem(searchableMaze, new DepthFirstSearch());
+        solveProblem(searchableMaze, new BestFirstSearch());
+//        solveProblem(searchableMaze, new DepthFirstSearch());
+//        solveProblem(searchableMaze, new DepthFirstSearch());
 
 
         System.out.println("hi :)");
@@ -32,7 +32,7 @@ public class RunSearchOnMaze {
         System.out.println("time to solve  "+(int) (EndTime - StartTime) +"(ms)");
 
 
-        System.out.println(String.format("'%s' algorithm - nodes evaluated: %s", searcher.getName(), searcher.getNumberOfNodesEvaluated()));
+//        System.out.println(String.format("'%s' algorithm - nodes evaluated: %s", searcher.getName(), searcher.getNumberOfNodesEvaluated()));
         //Printing Solution Path
         System.out.println("Solution path:");
         ArrayList<AState> solutionPath = solution.getSolutionPath();

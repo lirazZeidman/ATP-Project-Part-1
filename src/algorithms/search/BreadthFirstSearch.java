@@ -15,6 +15,7 @@ public class BreadthFirstSearch extends ASearchingAlgorithm {
         queue.add(maze.getStart());
         visited.add(maze.getStart().getCurNode());
         while(!queue.isEmpty()) {
+            NumberOfNodesEvaluated++;
             AState state = queue.poll();
             if (maze.AreWeThereYet(state)) //checks if reach the goal and if minimum
                 return new Solution(state);
