@@ -11,6 +11,7 @@ public class BreadthFirstSearch extends ASearchingAlgorithm {
 
     @Override
     public Solution solve(ISearchable maze) {
+
         HashSet<String> visited= new HashSet<String>();
         queue.add(maze.getStart());
         visited.add(maze.getStart().getCurNode());
