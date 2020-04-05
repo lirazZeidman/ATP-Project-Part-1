@@ -12,6 +12,10 @@ public class Solution {
             SolutionPath=new ArrayList<>();
             cost=Integer.MAX_VALUE;
             return;
+
+
+
+
         }
 
         cost = state.Cost;
