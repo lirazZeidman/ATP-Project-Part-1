@@ -8,6 +8,12 @@ public class Solution {
 
 
     public Solution(AState state) {
+        if(state==null){
+            SolutionPath=new ArrayList<>();
+            cost=Integer.MAX_VALUE;
+            return;
+        }
+
         cost = state.Cost;
         ArrayList<AState> solution= new ArrayList<AState>();
         while (state.getPrev()!=null){
