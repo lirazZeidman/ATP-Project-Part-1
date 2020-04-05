@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d3122e4-a9af-4ca7-a112-fdf32e54792e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATP-Project Part 1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ATP-Project Part 1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JUnit/JUnitTestingBestFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JUnit/JUnitTestingBestFirstSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/search/AState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/search/AState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/search/MazeState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/search/MazeState.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +83,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
@@ -99,14 +102,7 @@
       <recent name="C:\Users\danii\Desktop\Dani\Semster 3\ATP-Project-Part-1\algorithms" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="ATP-Project Part 1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.JUnitTestingBestFirstSearch">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.Main" />
       <module name="ATP-Project Part 1" />
@@ -116,40 +112,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BestFirstSearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ATP-Project Part 1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="algorithms.search" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.search.BestFirstSearchTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JUnit in ATP-Project Part 1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ATP-Project Part 1" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="directory" />
-      <option name="PARAMETERS" value="" />
-      <dir value="$PROJECT_DIR$/src/JUnit" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,39 +131,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test in ATP-Project Part 1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JUnitTestingBestFirstSearch.TestRegularSolution" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ATP-Project Part 1" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="directory" />
-      <option name="PARAMETERS" value="" />
-      <dir value="$PROJECT_DIR$/src/test" />
+      <option name="MAIN_CLASS_NAME" value="JUnitTestingBestFirstSearch" />
+      <option name="METHOD_NAME" value="TestRegularSolution" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JUnitTestingBestFirstSearch.TestValidMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ATP-Project Part 1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JUnitTestingBestFirstSearch" />
+      <option name="METHOD_NAME" value="TestValidMove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JUnitTestingBestFirstSearch.getName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ATP-Project Part 1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JUnitTestingBestFirstSearch" />
+      <option name="METHOD_NAME" value="getName" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main (1)" />
-      <item itemvalue="JUnit.test in ATP-Project Part 1" />
-      <item itemvalue="JUnit.JUnit in ATP-Project Part 1" />
       <item itemvalue="JUnit.JUnitTestingBestFirstSearch" />
+      <item itemvalue="JUnit.JUnitTestingBestFirstSearch.getName" />
+      <item itemvalue="JUnit.JUnitTestingBestFirstSearch.TestRegularSolution" />
+      <item itemvalue="JUnit.JUnitTestingBestFirstSearch.TestValidMove" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JUnitTestingBestFirstSearch" />
+        <item itemvalue="JUnit.JUnitTestingBestFirstSearch.TestValidMove" />
+        <item itemvalue="JUnit.JUnitTestingBestFirstSearch.TestRegularSolution" />
+        <item itemvalue="JUnit.JUnitTestingBestFirstSearch.getName" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.JUnitTestingBestFirstSearch" />
-        <item itemvalue="JUnit.test in ATP-Project Part 1" />
-        <item itemvalue="JUnit.JUnitTestingBestFirstSearch" />
-        <item itemvalue="JUnit.JUnit in ATP-Project Part 1" />
       </list>
     </recent_temporary>
   </component>
@@ -226,6 +199,7 @@
       <workItem from="1585839214349" duration="3346000" />
       <workItem from="1585845052519" duration="2513000" />
       <workItem from="1585847839575" duration="6025000" />
+      <workItem from="1586082739248" duration="3766000" />
     </task>
     <task id="LOCAL-00001" summary="|DAnis update">
       <created>1585321119571</created>
@@ -496,6 +470,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Mase class and Position class update" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="365" y="43" key="#All_in_ATP-Project_Part_1" timestamp="1586083502219">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="365" y="43" key="#All_in_ATP-Project_Part_1/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586083502219" />
     <state x="358" y="70" key="#Deployment" timestamp="1585321299915">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -557,10 +535,10 @@
     <state x="345" y="6" key="CommitChangelistDialog2/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585676830800" />
     <state x="345" y="6" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586082730542" />
     <state x="345" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585771033311" />
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1585321247883">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1586082838283">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585321247883" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586082838283" />
     <state x="549" y="138" key="FileChooserDialogImpl" timestamp="1585849981331">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -582,28 +560,28 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="13" y="550" width="1132" height="221" key="GridCell.Tab.-1.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585679448856" />
-    <state width="1493" height="242" key="GridCell.Tab.0.bottom" timestamp="1586000871509">
+    <state width="746" height="144" key="GridCell.Tab.0.bottom" timestamp="1586085735572">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="320" key="GridCell.Tab.0.bottom/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585847768699" />
+    <state width="746" height="144" key="GridCell.Tab.0.bottom/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586085735572" />
     <state width="1129" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585689510173" />
     <state width="1493" height="242" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586000871509" />
-    <state width="1493" height="242" key="GridCell.Tab.0.center" timestamp="1586000871508">
+    <state width="746" height="144" key="GridCell.Tab.0.center" timestamp="1586085735571">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="320" key="GridCell.Tab.0.center/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585847768698" />
+    <state width="746" height="144" key="GridCell.Tab.0.center/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586085735571" />
     <state width="1129" height="261" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585689510172" />
     <state width="1493" height="242" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586000871508" />
-    <state width="1493" height="242" key="GridCell.Tab.0.left" timestamp="1586000871508">
+    <state width="746" height="144" key="GridCell.Tab.0.left" timestamp="1586085735571">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="320" key="GridCell.Tab.0.left/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585847768698" />
+    <state width="746" height="144" key="GridCell.Tab.0.left/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586085735571" />
     <state width="1129" height="261" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585689510172" />
     <state width="1493" height="242" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586000871508" />
-    <state width="1493" height="242" key="GridCell.Tab.0.right" timestamp="1586000871508">
+    <state width="746" height="144" key="GridCell.Tab.0.right" timestamp="1586085735571">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="320" key="GridCell.Tab.0.right/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585847768699" />
+    <state width="746" height="144" key="GridCell.Tab.0.right/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586085735571" />
     <state width="1129" height="261" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585689510173" />
     <state width="1493" height="242" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586000871508" />
     <state x="807" y="472" width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1585846151379">
@@ -640,10 +618,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="482" y="122" key="RollbackChangesDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585321288565" />
-    <state x="166" y="0" key="SettingsEditor" timestamp="1585849990719">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1586083586936">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585321393144" />
+    <state x="249" y="0" key="SettingsEditor/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586083586936" />
     <state x="166" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585849990719" />
     <state x="490" y="154" width="540" height="524" key="StructurePopup" timestamp="1585591798134">
       <screen x="0" y="0" width="1536" height="824" />
@@ -663,6 +641,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="584" y="190" key="chooseDestDirectoryDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585845258714" />
+    <state x="524" y="256" key="cloudConfig.PluginsDialog" timestamp="1586085709718">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="524" y="256" key="cloudConfig.PluginsDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586085709718" />
+    <state x="524" y="256" key="cloudConfig.SelfSettingsDialog" timestamp="1586085703332">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="524" y="256" key="cloudConfig.SelfSettingsDialog/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586085703332" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1585669992981">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -673,10 +659,10 @@
     <state x="498" y="305" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585847718599" />
     <state x="498" y="305" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585849765814" />
     <state x="498" y="305" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1585847868022" />
-    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585847773081">
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586082823467">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585847773081" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.430.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586082823467" />
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585689676868" />
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1585323096060" />
     <state x="540" y="130" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585848155114">
@@ -717,11 +703,11 @@
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585827069975" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ATP_Project_Part_1$BestFirstSearchTest.ic" NAME="BestFirstSearchTest Coverage Results" MODIFIED="1585847728059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>algorithms.search.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/ATP_Project_Part_1$main__1_.ic" NAME="main (1) Coverage Results" MODIFIED="1585678951770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ATP_Project_Part_1$BestFirstSearchTest.ic" NAME="BestFirstSearchTest Coverage Results" MODIFIED="1585847728059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>algorithms.search.*</FILTER>
     </SUITE>
   </component>
 </project>

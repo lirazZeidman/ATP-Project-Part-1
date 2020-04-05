@@ -1,5 +1,7 @@
 package algorithms.search;
 
+import java.util.Objects;
+
 public abstract class AState {
     protected String CurNode; //distance or cost up to this point
     protected int Cost=0; // the cost of this point
@@ -32,7 +34,20 @@ public abstract class AState {
         return getCurNode().equals(b.CurNode);
     }
 
-//   public int compare(AState other){
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        AState aState = (AState) o;
+        return CurNode.equals(aState.CurNode);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(CurNode);
+    }
+
+    //   public int compare(AState other){
 //       int tCost=this.Cost,oCost=other.Cost;
 //       if(tCost==oCost)
 //           return 0;
