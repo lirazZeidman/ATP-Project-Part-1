@@ -19,6 +19,7 @@ public class DepthFirstSearch extends ASearchingAlgorithm {
             if (maze.AreWeThereYet(node)) //checks if reach the goal and if minimum
                 return  new Solution(node);
             if (!VistiedState.contains(node.getCurNode())) { //checks if vistied
+                NumberOfNodesEvaluated++;
                 VistiedState.add(node.getCurNode());
                 ArrayList<AState> neighbors = maze.getAllPossibleStates(node); //checks all the
                 for (AState neighbor : neighbors)

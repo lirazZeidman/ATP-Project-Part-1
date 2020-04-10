@@ -52,7 +52,7 @@ public class MyMazeGenerator extends AMazeGenerator {
     public void lastE(){
         int max= maze.getRowSize()*maze.getColumnSize()-1;
         int row=0,column = 0;
-        while (max>1)  {
+        while (max>1 )  {
              row= max/maze.getColumnSize();
              column= max%(maze.getColumnSize());
             if (maze.MazeTable[row][column]==0){

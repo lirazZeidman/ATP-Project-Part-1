@@ -6,12 +6,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class BreadthFirstSearch extends ASearchingAlgorithm {
-    Queue<AState> queue= new LinkedList<AState>();
-
 
     @Override
     public Solution solve(ISearchable maze) {
-
+        Queue<AState> queue= new LinkedList<AState>();
         HashSet<String> visited= new HashSet<String>();
         queue.add(maze.getStart());
         visited.add(maze.getStart().getCurNode());

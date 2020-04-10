@@ -12,7 +12,6 @@ public class Solution {
             SolutionPath=new ArrayList<>();
             cost=Integer.MAX_VALUE;
             return;
-
         }
 
         cost = state.Cost;
@@ -25,8 +24,7 @@ public class Solution {
         SolutionPath = solution;
     }
 
-    public int getCost() { return cost;
-    }
+    public int getCost() { return cost;    }
 
     public ArrayList<AState> getSolutionPath() {
         return SolutionPath;
