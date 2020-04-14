@@ -3,6 +3,11 @@ package algorithms.mazeGenerators;
 public class EmptyMazeGenerator extends  AMazeGenerator {
 
     @Override
+       /**
+     * creates and returns an EmptyMaze sized row*column
+     * @param  row, column size of the wanted maze
+     * @return maze has not walls, and has many different ways to solve
+     */
     public Maze generate(int row, int column) {
         if(row<0 ||column<0)
             return null;

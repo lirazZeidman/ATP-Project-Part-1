@@ -753,11 +753,11 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ATP_Project_Part_1$main__1_.ic" NAME="main (1) Coverage Results" MODIFIED="1585678951770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>test.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/ATP_Project_Part_1$BestFirstSearchTest.ic" NAME="BestFirstSearchTest Coverage Results" MODIFIED="1585847728059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>algorithms.search.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ATP_Project_Part_1$main__1_.ic" NAME="main (1) Coverage Results" MODIFIED="1585678951770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test.*</FILTER>
     </SUITE>
   </component>
 </project>

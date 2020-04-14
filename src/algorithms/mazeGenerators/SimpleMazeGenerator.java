@@ -4,6 +4,11 @@ import java.util.Random;
 
 public class SimpleMazeGenerator extends  AMazeGenerator {
     @Override
+    /**
+     * ccreates and returns a randomised SimpleMaze sized row*column
+     * @param  row, column size of the wanted maze
+     * @return maze has not walls, and has many different ways to solve
+     */
     public Maze generate(int row, int column) {
 
         if( row<0 || column<0) //int can not be null

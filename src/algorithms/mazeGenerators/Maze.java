@@ -8,7 +8,11 @@ public class Maze {
    public Position StartPosition;
    public Position GoalPosition;
 
-
+    /**
+     * creates a maze - initialing the datat of the maze.
+     * @param rowSize - size of the maze
+     * @param columnSize - size of the maze
+     */
     public Maze(int rowSize, int columnSize) {
         if (rowSize < 0 || columnSize < 0) {
             //TODO Throw Exceptions
@@ -21,7 +25,12 @@ public class Maze {
         GoalPosition = new Position(rowSize - 1, columnSize - 2);
     }
 
-
+    /**
+     *find and returns all moves from the position pos that the searcher can commit.
+     * valid diagonal and regular moves.
+     * @param pos
+     * @return positions ArrayList of all posible moves from the position pos that the searcher can commit.
+     */
     public ArrayList<Position> getMoveForSearcher(Position pos) {
         if (pos == null) //if we'll return null -> will be a lot to check later.
             return new ArrayList<>();
@@ -47,6 +56,12 @@ public class Maze {
         return searcherNeighbors;
     }
 
+    /**
+     * checks if the  arrayist list contains position tocomp
+     * @param lst -  checking in this list
+     * @param tocomp - checking if this in the list
+     * @return boolean value -true if lst contains tocomp
+     */
     public boolean ListContains(ArrayList<Position> lst, Position tocomp) {
         for (Position pos : lst) {
             if (pos.isEqual(tocomp))
@@ -55,6 +70,13 @@ public class Maze {
         return false;
     }
 
+
+    /**
+     * calculating all neighbors on the maze table from position pos
+     * including regular and diagonal neighbors.
+     * @param pos - calculating from this position
+     * @return an array list that contains all posible moves
+     */
     protected ArrayList<Position> getAllNeighbors(Position pos) {
 
         if (pos == null) //if well return null -> will e a lot to check later.
@@ -71,6 +93,11 @@ public class Maze {
         return neighbors;
     }
 
+    /**
+     * returns all valid moves to generate the maze - valid regular moves only
+     * @param pos all valid regular moves from this position
+     * @return an positions array list contains the valid regular
+     */
     protected ArrayList<Position> getMoveForGenerate(Position pos) {
         //dealing if pos=null i getNeighbors func.
         ArrayList<Position> neighbors = getAllNeighbors(pos);
@@ -82,6 +109,11 @@ public class Maze {
         return NextMoveNeighbors;
     }
 
+    /**
+     * checks if nextpos data (row,column) is  on the mazeTable
+     * @param nextPos
+     * @return a boolean value - true if on the maze table , else -false
+     */
     protected boolean PosOnMazeTable(Position nextPos) {
         if (nextPos == null)
             return false;
@@ -89,6 +121,11 @@ public class Maze {
         return 0 <= x && x < RowSize && 0 <= y && y < ColumnSize;
     }
 
+    /**
+     * returns the tableMAze value of the position
+     * @param Pos
+     * @return 0 or 1
+     */
     protected int getPosValue(Position Pos) {
         if (Pos == null)
             return -1;//wont get here, checking first always if on board.
@@ -115,7 +152,9 @@ public class Maze {
         return MazeTable;
     }
 
-
+    /**
+     * prints the maze table be the given Instructions
+     */
     public void print() {
         for (int i = 0; i < RowSize; i++) {
             for (int j = 0; j < ColumnSize; j++) {
