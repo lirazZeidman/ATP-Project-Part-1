@@ -2,9 +2,15 @@ package algorithms.search;
 
 import java.util.ArrayList;
 
+
 public interface ISearchable {
-    public ArrayList<AState> getAllPossibleStates(AState pos); //get all neighbors
-    public AState getStart();
-    public AState getGoal();
-    boolean AreWeThereYet(AState x);
+    /**
+     *
+     * @param pos The pos we want to return all he's neighbors.
+     * @return All the valid neighbors.
+     */
+     ArrayList<AState> getAllPossibleStates(AState pos);
+     AState getStart();
+     AState getGoal();
+     boolean AreWeThereYet(AState x);
 }

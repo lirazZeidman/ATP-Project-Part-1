@@ -60,6 +60,6 @@ class JUnitTestingBestFirstSearch {
     @Test
     public void TestSolution() throws Exception{
         Solution solution= new Solution(null);
-        Assertions.assertEquals(Integer.MAX_VALUE,solution.getCost());
+        Assertions.assertEquals(-1,solution.getCost());
     }
 }

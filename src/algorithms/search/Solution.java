@@ -6,7 +6,10 @@ public class Solution {
     private  ArrayList<AState> SolutionPath;
     private int cost;
 
-
+    /**
+     * Builder for the solution gets A state and saves all the path to him.
+     * @param state The goal and he's all ancestors. if null saves empty list and the distance as -1.
+     */
     public Solution(AState state) {
         if(state==null){
             SolutionPath=new ArrayList<>();

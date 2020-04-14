@@ -5,12 +5,20 @@ import java.util.HashSet;
 import java.util.Stack;
 
 public class DepthFirstSearch extends ASearchingAlgorithm {
-
+    /**
+     * A searching algorithm that return a path if exist.
+     */
     public DepthFirstSearch(){}
 
-
+    /**
+     *
+     * @param maze A searchable domain that we search the path their
+     * @return return if their any path if isn't returns -1
+     */
     @Override
     public Solution solve(ISearchable maze) {
+
+
         if (maze==null||maze.getStart()== null || maze.getGoal()==null)
             return new Solution(null);
         NumberOfNodesEvaluated=0;

@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public abstract class AState {
     protected String CurNode; //distance or cost up to this point
-    protected int Cost=0; // the cost of this point
+    protected int Cost; // the cost of this point
                          //in our maze forward cost 10 and diagonal cost 15
      protected AState prev; // prevous node
 
@@ -27,13 +27,18 @@ public abstract class AState {
     }
 
      public  String toString(){
-        return getCurNode().toString();
-     };
+        return getCurNode();
+     }
 
     public  boolean equals(AState b){
         return getCurNode().equals(b.CurNode);
     }
 
+    /**
+     * Comare to states by its string
+     * @param o the other object
+     * @return True- if they eqeuls
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

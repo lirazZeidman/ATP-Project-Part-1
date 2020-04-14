@@ -5,13 +5,16 @@ import algorithms.mazeGenerators.Position;
 
 import java.util.ArrayList;
 
+
 public class SearchableMaze implements ISearchable {
+
     private Maze maze;
 
+    /**
+     * A searchable maze is an adaptor for a maze to domain where we can use searching algorithms
+     * @param maze maze that we will adapt
+     */
     public SearchableMaze(Maze maze) {
-//        if (maze==null){
-//
-//        }
         this.maze = maze;
     }
 
@@ -40,7 +43,6 @@ public class SearchableMaze implements ISearchable {
         return new MazeState(maze.getStartPosition(), null, 0);
     }
 
-
     @Override
     public AState getGoal() {
         if (maze == null)
@@ -48,6 +50,12 @@ public class SearchableMaze implements ISearchable {
         return new MazeState(maze.getGoalPosition(), null, 0);
     }
 
+
+    /**
+     * Checking if we at the end point
+     * @param state the state we want to compare to the goal
+     * @return True- we at the goal
+     */
     public boolean AreWeThereYet(AState state) {
         if (state == null)
             return false;

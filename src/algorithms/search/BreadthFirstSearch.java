@@ -7,15 +7,25 @@ import java.util.Queue;
 
 public class BreadthFirstSearch extends ASearchingAlgorithm {
     protected Queue<AState> queue;
+    /**
+     * A searching algorithm that return the shortest path.
+     */
+
     public BreadthFirstSearch(){
         queue= new LinkedList<AState>();
     }
 
+    /**
+     *
+     * @param maze A searchable domain that we search the path their
+     * @return return solution as the shortest path.
+     */
     @Override
     public Solution solve(ISearchable maze) {
         if ( maze==null||maze.getStart()== null || maze.getGoal()==null)
             return new Solution(null);
         queue.clear();
+        NumberOfNodesEvaluated=1;
         HashSet<String> visited= new HashSet<String>();
         Queue<AState> queue= new LinkedList<AState>();
         queue.add(maze.getStart());
