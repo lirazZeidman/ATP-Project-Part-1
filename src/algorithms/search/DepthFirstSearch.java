@@ -11,7 +11,7 @@ public class DepthFirstSearch extends ASearchingAlgorithm {
 
     @Override
     public Solution solve(ISearchable maze) {
-        if (maze.getStart()== null || maze.getGoal()==null || maze==null)
+        if (maze==null||maze.getStart()== null || maze.getGoal()==null)
             return new Solution(null);
         NumberOfNodesEvaluated=0;
         HashSet<String> VistiedState = new HashSet<String>();

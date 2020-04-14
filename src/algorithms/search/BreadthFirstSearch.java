@@ -13,21 +13,21 @@ public class BreadthFirstSearch extends ASearchingAlgorithm {
 
     @Override
     public Solution solve(ISearchable maze) {
-        if (maze.getStart()== null || maze.getGoal()==null || maze==null)
+        if ( maze==null||maze.getStart()== null || maze.getGoal()==null)
             return new Solution(null);
-        NumberOfNodesEvaluated=0;
-
+        queue.clear();
         HashSet<String> visited= new HashSet<String>();
+        Queue<AState> queue= new LinkedList<AState>();
         queue.add(maze.getStart());
         visited.add(maze.getStart().getCurNode());
         while(!queue.isEmpty()) {
             AState state = queue.poll();
-            NumberOfNodesEvaluated++;
             if (maze.AreWeThereYet(state)) //checks if reach the goal and if minimum
                 return new Solution(state);
             ArrayList<AState> neighbors = maze.getAllPossibleStates(state);
             for (AState tmpState : neighbors) {
                 if (!visited.contains(tmpState.getCurNode())) {
+                    NumberOfNodesEvaluated++;
                     visited.add(tmpState.getCurNode());
                     queue.add(tmpState);
                 }
