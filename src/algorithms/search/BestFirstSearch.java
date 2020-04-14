@@ -3,8 +3,11 @@ package algorithms.search;
 import java.util.*;
 
 public class BestFirstSearch extends ASearchingAlgorithm{
+    public BestFirstSearch() {}
 
     public Solution solve(ISearchable maze) {
+        if (maze.getStart()== null || maze.getGoal()==null || maze==null)
+            return new Solution(null);
         HashSet<String> visited = new HashSet<>();
         Queue<AState> queue = new PriorityQueue<>( (a,b) -> a.getCost() - b.getCost());
         queue.add(maze.getStart());

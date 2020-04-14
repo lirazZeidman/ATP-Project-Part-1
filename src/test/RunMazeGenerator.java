@@ -2,9 +2,7 @@ package test;
 
 import algorithms.mazeGenerators.*;
 
-/**
- * Created by Aviadjo on 3/22/2017.
- */
+
 public class RunMazeGenerator {
     public static void main(String[] args) {
 //        testMazeGenerator(new SimpleMazeGenerator());
@@ -15,7 +13,7 @@ public class RunMazeGenerator {
         // prints the time it takes the algorithm to run
         System.out.println(String.format("Maze generation time(ms): %s", mazeGenerator.measureAlgorithmTimeMillis(7/*rows*/,14/*columns*/)));
         // generate another maze
-        Maze maze = mazeGenerator.generate(7/*rows*/, 14/*columns*/);
+        Maze maze = mazeGenerator.generate(1000/*rows*/, 14/*columns*/);
 
         // prints the maze
         maze.print();

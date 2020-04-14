@@ -13,7 +13,6 @@ public class Solution {
             cost=Integer.MAX_VALUE;
             return;
         }
-
         cost = state.Cost;
         ArrayList<AState> solution= new ArrayList<AState>();
         while (state.getPrev()!=null){
