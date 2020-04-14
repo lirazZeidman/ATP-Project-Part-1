@@ -10,7 +10,7 @@ public class Solution {
     public Solution(AState state) {
         if(state==null){
             SolutionPath=new ArrayList<>();
-            cost=Integer.MAX_VALUE;
+            cost=-1;
             return;
         }
         cost = state.Cost;

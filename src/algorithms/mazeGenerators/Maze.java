@@ -4,9 +4,9 @@ import java.util.ArrayList;
 public class Maze {
     private int ColumnSize;
     private int RowSize;
-    protected int[][] MazeTable;
-    protected Position StartPosition;
-    protected Position GoalPosition;
+   public  int[][] MazeTable;
+   public Position StartPosition;
+   public Position GoalPosition;
 
 
     public Maze(int rowSize, int columnSize) {

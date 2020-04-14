@@ -1,32 +1,37 @@
 package test;
 
-import algorithms.mazeGenerators.IMazeGenerator;
-import algorithms.mazeGenerators.Maze;
-import algorithms.mazeGenerators.SimpleMazeGenerator;
-import algorithms.search.*;
+import algorithms.search.ISearchable;
+import algorithms.search.ISearchingAlgorithm;
+import algorithms.search.Solution;
 
-import java.util.ArrayList;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 /**
  * Created by Aviadjo on 3/22/2017.
  */
 class main {
     public static void main(String[] args) {
-        for (int i = 0; i <5 ; i++) {
-            System.out.println("///"+i+"///");
-            IMazeGenerator mg = new SimpleMazeGenerator();
-            Maze maze = mg.generate(7, 14);
-
-            maze.print();
-            SearchableMaze searchableMaze = new SearchableMaze(maze);
-
-            solveProblem(searchableMaze, new BreadthFirstSearch());
+//        for (int i = 0; i <1 ; i++) {
+//            System.out.println("///"+i+"///");
+//            IMazeGenerator mg = new SimpleMazeGenerator();
+//            Maze maze = mg.generate(1000, 1000);
+//
+////            maze.print();
+//            SearchableMaze searchableMaze = new SearchableMaze(maze);
+//
+//            solveProblem(searchableMaze, new BreadthFirstSearch());
 //            solveProblem(searchableMaze, new DepthFirstSearch());
-            System.out.println("\n");
+//            solveProblem(searchableMaze, new BestFirstSearch());
+//
+//        }
+        Queue<Integer> q;
+        q= new PriorityQueue<>((x, y) -> x - y);
+        q.add(10);
+        q.add(5);
+        q.add(15);
+        System.out.println(q.peek());
 
-            solveProblem(searchableMaze, new BestFirstSearch());
-            System.out.println("\n");
-        }
     }
 
     private static void solveProblem(ISearchable domain, ISearchingAlgorithm searcher) {
@@ -35,18 +40,18 @@ class main {
         Solution solution = searcher.solve(domain);
         long EndTime = System.currentTimeMillis();
 
-        System.out.print(String.format("'%s' algorithm - nodes evaluated: %s", searcher.getName(), searcher.getNumberOfNodesEvaluated()));
-        System.out.print("    solution time - "+ (EndTime-StartTime));
+        System.out.println(String.format("'%s' algorithm - nodes evaluated: %s", searcher.getName(), searcher.getNumberOfNodesEvaluated()));
+        System.out.println("    solution time - "+ (EndTime-StartTime));
         if(solution==null)
             System.out.println("\ncost is : : :   solution is null");
         else
             System.out.println("\ncost is : : :   "+solution.getCost());
 //        Printing Solution Path
-        System.out.println("Solution path:");
-        ArrayList<AState> solutionPath = solution.getSolutionPath();
-        for (int i = 0; i < solutionPath.size(); i++) {
-            System.out.print(String.format("%s. %s",i,solutionPath.get(i)));
-        }
+//        System.out.println("Solution path:");
+//        ArrayList<AState> solutionPath = solution.getSolutionPath();
+//        for (int i = 0; i < solutionPath.size(); i++) {
+//            System.out.print(String.format("%s. %s",i,solutionPath.get(i)));
+//        }
     }
 }
 
