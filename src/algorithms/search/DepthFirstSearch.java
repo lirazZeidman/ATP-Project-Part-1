@@ -17,14 +17,11 @@ public class DepthFirstSearch extends ASearchingAlgorithm {
      */
     @Override
     public Solution solve(ISearchable maze) {
-
-
         if (maze==null||maze.getStart()== null || maze.getGoal()==null)
             return new Solution(null);
         NumberOfNodesEvaluated=0;
         HashSet<String> VistiedState = new HashSet<String>();
         Stack<AState> stack = new Stack<AState>();
-        AState min = null;
         stack.push(maze.getStart());
         while (!stack.empty()) {
             AState node = stack.pop();

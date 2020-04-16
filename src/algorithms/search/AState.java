@@ -5,10 +5,10 @@ import java.util.Objects;
 public abstract class AState {
     protected String CurNode; //distance or cost up to this point
     protected int Cost; // the cost of this point
-                         //in our maze forward cost 10 and diagonal cost 15
-     protected AState prev; // prevous node
+    //in our maze forward cost 10 and diagonal cost 15
+    protected AState prev; // prevous node
 
-    public AState(String curNode,  AState prev,int cost) {
+    public AState(String curNode, AState prev, int cost) {
         CurNode = curNode;
         Cost = cost;
         this.prev = prev;
@@ -26,16 +26,19 @@ public abstract class AState {
         return prev;
     }
 
-     public  String toString(){
-        return getCurNode();
-     }
+    public String toString() {
+        return getCurNode().toString();
+    }
 
-    public  boolean equals(AState b){
+    ;
+
+    public boolean equals(AState b) {
         return getCurNode().equals(b.CurNode);
     }
 
     /**
      * Comare to states by its string
+     *
      * @param o the other object
      * @return True- if they eqeuls
      */
@@ -51,15 +54,5 @@ public abstract class AState {
     public int hashCode() {
         return Objects.hash(CurNode);
     }
-
-    //   public int compare(AState other){
-//       int tCost=this.Cost,oCost=other.Cost;
-//       if(tCost==oCost)
-//           return 0;
-//       if(tCost>oCost)
-//           return 1;
-//       return -1;
-//   }
 }
-
 
