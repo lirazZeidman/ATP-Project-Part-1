@@ -27,7 +27,6 @@ public class BreadthFirstSearch extends ASearchingAlgorithm {
         queue.clear();
         NumberOfNodesEvaluated=1;
         HashSet<String> visited= new HashSet<String>();
-        Queue<AState> queue= new LinkedList<AState>();
         queue.add(maze.getStart());
         visited.add(maze.getStart().getCurNode());
         while(!queue.isEmpty()) {
