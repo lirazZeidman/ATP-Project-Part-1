@@ -15,7 +15,7 @@ public class Position  {
     }
 
     /**
-     * creates a Position fro a string
+     * creates a Position from a string
      * @param rowIndexColumnIndex - formatted {rowValue,columnValue}
      */
     public Position(String rowIndexColumnIndex) { //position can be anything, were checking if the pos on the board in diffrent function
@@ -59,7 +59,7 @@ public class Position  {
     }
 
     /**
-     * checks if   position p diagonal to this position
+     * checks if position p diagonal to this position
      * @param p - the checked position
      * @return a boolean value - true if diagonal , else -false
      */

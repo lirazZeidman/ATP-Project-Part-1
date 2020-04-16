@@ -7,7 +7,7 @@ public class SimpleMazeGenerator extends  AMazeGenerator {
     /**
      * ccreates and returns a randomised SimpleMaze sized row*column
      * @param  row, column size of the wanted maze
-     * @return maze has not walls, and has many different ways to solve
+     * @return maze has not walls, and has many ways to solve
      */
     public Maze generate(int row, int column) {
 
